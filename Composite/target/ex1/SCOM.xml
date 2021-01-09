@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-09T06:52:25.387Z"
+        schema="xsd/skeleton.xsd"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>SCOM</title>
+   <description>"Sensitive Class Cohesion Metric" (SCOM) notes some deficits
+          in the LCOM5 metric, particularly how it fails in some cases to
+          discriminate (ie. it assigns the same score) between classes where
+          one is clearly more cohesive than the other. In these cases, SCOM
+          is more "sensitive" than LCOM5 because it evaluates to different
+          values.
+          Like LCOM5, SCOM values lie in the range [0..1], but their meanings
+          are inverted: "0" indicates no cohesion at all (i.e. every method
+          deals with an independent set of attributes), whereas "1" indicates
+          full cohesion (ie. every method uses all the attributes of the class).
+          This inversion stems from SCOM measuring how much "agreement" there
+          is among the methods, unlike LCOM which measures how much
+          "disagreement" there is.
+          Another important distinction is that SCOM assigns "weights" to each
+          pair of methods computed equal to the proportion of total attributes
+          being used between the two. This contributes to the metric's
+          "sensitivity".
+          Finally, the authors provide a formula for the minimum value beyond
+          which "we can claim that [the class] has at least two clusters and
+          it must be subdivided into smaller, more cohesive classes".</description>
+   <app element="false"
+        id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex1">
+      <package element="false" id="ex1">
+         <class color="green" element="false" id="ImageEditor" value="NaN">
+            <vars>
+               <var id="m">1</var>
+               <var id="pairs">0</var>
+               <var id="a">2</var>
+               <var id="SCOM_minK">NaN</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BaseShape" value="0.0265">
+            <vars>
+               <var id="m">12</var>
+               <var id="pairs">66</var>
+               <var id="a">4</var>
+               <var id="SCOM_minK">0.0667613636363636385</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Circle" value="0.3333">
+            <vars>
+               <var id="m">3</var>
+               <var id="pairs">3</var>
+               <var id="a">1</var>
+               <var id="SCOM_minK">0.999999999999999999</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Dot" value="0">
+            <vars>
+               <var id="m">3</var>
+               <var id="pairs">3</var>
+               <var id="a">1</var>
+               <var id="SCOM_minK">0.999999999999999999</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="NaN">
+            <vars>
+               <var id="m">0</var>
+               <var id="pairs">0</var>
+               <var id="a">0</var>
+               <var id="SCOM_minK">NaN</var>
+            </vars>
+         </class>
+         <class color="red"
+                element="true"
+                id="ImageEditor$EditorCanvas"
+                value="0.1489">
+            <vars>
+               <var id="m">5</var>
+               <var id="pairs">10</var>
+               <var id="a">3</var>
+               <var id="SCOM_minK">0.144444444444444442988888888888888889</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Rectangle" value="0">
+            <vars>
+               <var id="m">3</var>
+               <var id="pairs">3</var>
+               <var id="a">2</var>
+               <var id="SCOM_minK">0.333333333333333334</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="CompoundShape" value="0.8942">
+            <vars>
+               <var id="m">14</var>
+               <var id="pairs">91</var>
+               <var id="a">1</var>
+               <var id="SCOM_minK">0.999999999999999999</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
+   <min>0.0265</min>
+   <max>0.3333</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 8, steps: 32; all: 3; min: 0.0265; max: 0.3333; delta: 0.0095875-->
+      <bar color="red" x="0">1</bar>
+      <!--step: 0, left: 0.0265, right: 0.036087498-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 0.036087498, right: 0.045675002-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 0.045675002, right: 0.0552625-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 0.0552625, right: 0.06485-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0.06485, right: 0.0744375-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 0.0744375, right: 0.084025-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0.084025, right: 0.09361251-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 0.09361251, right: 0.1032-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0.1032, right: 0.1127875-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 0.1127875, right: 0.122375004-->
+      <bar color="yellow" x="0.3125">0</bar>
+      <!--step: 10, left: 0.122375004, right: 0.13196251-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0.13196251, right: 0.14155-->
+      <bar color="red" x="0.375">1</bar>
+      <!--step: 12, left: 0.14155, right: 0.1511375-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 0.1511375, right: 0.16072501-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.16072501, right: 0.17031251-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 0.17031251, right: 0.1799-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.1799, right: 0.1894875-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 0.1894875, right: 0.199075-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 0.199075, right: 0.20866251-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.20866251, right: 0.21825-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0.21825, right: 0.2278375-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.2278375, right: 0.23742501-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0.23742501, right: 0.24701251-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0.24701251, right: 0.2566-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.2566, right: 0.2661875-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0.2661875, right: 0.275775-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.275775, right: 0.28536248-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.28536248, right: 0.29495-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.29495, right: 0.3045375-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0.3045375, right: 0.314125-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0.314125, right: 0.3237125-->
+      <bar color="red" x="0.96875">1</bar>
+      <!--step: 31, left: 0.3237125, right: 0.3333-->
+   </bars>
+   <statistics>
+      <total>8</total>
+      <elements>3</elements>
+      <mean>0.16956666666666667</mean>
+      <sigma>0.1261002070665319</sigma>
+      <variance>0.015901262222222223</variance>
+      <defects>0.6666666666666666</defects>
+   </statistics>
+</metric>

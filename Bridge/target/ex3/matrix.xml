@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-08T09:15:36.622Z"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="ex3.GreenColor"
+             rank="0.8400"
+             short_id="e.GreenColor"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex3.Main" rank="0.8400" short_id="e.Main" trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex3.Pentagon"
+             rank="0.8400"
+             short_id="e.Pentagon"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex3.RedColor"
+             rank="0.8400"
+             short_id="e.RedColor"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex3.Shape" rank="0.8400" short_id="e.Shape" trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex3.Triangle"
+             rank="0.8400"
+             short_id="e.Triangle"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+   </classes>
+</matrix>

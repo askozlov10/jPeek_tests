@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T16:35:59.303193900Z"
+        version="1.0-SNAPSHOT"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="main.EmailNotification"
+             rank="0.7143"
+             short_id="m.EmailNotification"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="main.NotificationFactory"
+             rank="0.7143"
+             short_id="m.NotificationFactory"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="main.NotificationService"
+             rank="0.7714"
+             short_id="m.NotificationService"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="main.PushNotification"
+             rank="0.7143"
+             short_id="m.PushNotification"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="main.SMSNotification"
+             rank="0.7143"
+             short_id="m.SMSNotification"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+   </classes>
+</matrix>

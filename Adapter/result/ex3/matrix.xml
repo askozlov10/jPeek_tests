@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-06T15:00:45.598Z"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="org.ex3.Main" rank="0.8400" short_id="o.e.Main" trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="org.ex3.RoundHole"
+             rank="0.2800"
+             short_id="o.e.RoundHole"
+             trust="0.5">
+         <metric color="yellow" name="CAMC" rank="3"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="red" name="SCOM" rank="1"/>
+      </class>
+      <class id="org.ex3.RoundPeg"
+             rank="0.8400"
+             short_id="o.e.RoundPeg"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="org.ex3.SquarePeg"
+             rank="1.0000"
+             short_id="o.e.SquarePeg"
+             trust="1">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="LCOM5" rank="5"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="org.ex3.SquarePegAdapter"
+             rank="0.8400"
+             short_id="o.e.SquarePegAdapter"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+   </classes>
+</matrix>

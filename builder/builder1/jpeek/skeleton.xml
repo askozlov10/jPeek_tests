@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T16:59:30.477401Z"
+          schema="xsd/skeleton.xsd"
+          version="1.0-SNAPSHOT">
+   <app id="D:\jpeek_patterns\builder\builder1">
+      <package id="main">
+         <class id="GPSNavigator"><!--Package: main; name: main.GPSNavigator; file: main.GPSNavigator-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">route</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">route</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">route</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getRoute"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">route</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Manual"><!--Package: main; name: main.Manual; file: main.Manual-->
+            <attributes>
+               <attribute final="true" public="false" static="false" type="Lmain/CarType">carType</attribute>
+               <attribute final="true" public="false" static="false" type="I">seats</attribute>
+               <attribute final="true" public="false" static="false" type="Lmain/Engine">engine</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lmain/Transmission">transmission</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lmain/TripComputer">tripComputer</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lmain/GPSNavigator">gpsNavigator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lmain/CarType;ILmain/Engine;Lmain/Transmission;Lmain/TripComputer;Lmain/GPSNavigator;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/CarType">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="Lmain/Engine">?</arg>
+                     <arg type="Lmain/Transmission">?</arg>
+                     <arg type="Lmain/TripComputer">?</arg>
+                     <arg type="Lmain/GPSNavigator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">carType</op>
+                     <op code="put">seats</op>
+                     <op code="put">engine</op>
+                     <op code="put">transmission</op>
+                     <op code="put">tripComputer</op>
+                     <op code="put">gpsNavigator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="print"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">carType</op>
+                     <op code="get">seats</op>
+                     <op code="get">engine</op>
+                     <op code="call">
+                        <name>main.Engine.getVolume</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">engine</op>
+                     <op code="call">
+                        <name>main.Engine.getMileage</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">transmission</op>
+                     <op code="get">tripComputer</op>
+                     <op code="get">gpsNavigator</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Main"><!--Package: main; name: main.Main; file: main.Main-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>main.Director.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.CarBuilder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Director.constructSportsCar</name>
+                        <args>
+                           <arg type="Lmain/Builder">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.CarBuilder.getResult</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>main.Car.getCarType</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.CarManualBuilder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Director.constructSportsCar</name>
+                        <args>
+                           <arg type="Lmain/Builder">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.CarManualBuilder.getResult</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>main.Manual.print</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="CarManualBuilder"><!--Package: main; name: main.CarManualBuilder; file: main.CarManualBuilder-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lmain/CarType">type</attribute>
+               <attribute final="false" public="false" static="false" type="I">seats</attribute>
+               <attribute final="false" public="false" static="false" type="Lmain/Engine">engine</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lmain/Transmission">transmission</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lmain/TripComputer">tripComputer</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lmain/GPSNavigator">gpsNavigator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/CarType;)V"
+                       name="setCarType"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/CarType">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">type</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(I)V"
+                       name="setSeats"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">seats</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/Engine;)V"
+                       name="setEngine"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/Engine">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">engine</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/Transmission;)V"
+                       name="setTransmission"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/Transmission">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">transmission</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/TripComputer;)V"
+                       name="setTripComputer"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/TripComputer">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">tripComputer</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/GPSNavigator;)V"
+                       name="setGPSNavigator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/GPSNavigator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">gpsNavigator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/Manual;"
+                       name="getResult"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/Manual</return>
+                  <ops>
+                     <op code="get">type</op>
+                     <op code="get">seats</op>
+                     <op code="get">engine</op>
+                     <op code="get">transmission</op>
+                     <op code="get">tripComputer</op>
+                     <op code="get">gpsNavigator</op>
+                     <op code="call">
+                        <name>main.Manual.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lmain/CarType">?</arg>
+                           <arg type="ILmain/Engine">?</arg>
+                           <arg type="Lmain/Transmission">?</arg>
+                           <arg type="Lmain/TripComputer">?</arg>
+                           <arg type="Lmain/GPSNavigator">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Engine"><!--Package: main; name: main.Engine; file: main.Engine-->
+            <attributes>
+               <attribute final="true" public="false" static="false" type="D">volume</attribute>
+               <attribute final="false" public="false" static="false" type="D">mileage</attribute>
+               <attribute final="false" public="false" static="false" type="Z">started</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(DD)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="D">?</arg>
+                     <arg type="D">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">volume</op>
+                     <op code="put">mileage</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="on"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">started</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="off"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">started</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Z"
+                       name="isStarted"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Z</return>
+                  <ops>
+                     <op code="get">started</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(D)V"
+                       name="go"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="D">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">started</op>
+                     <op code="get">mileage</op>
+                     <op code="put">mileage</op>
+                     <op code="get_static">java.lang.System.err</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()D"
+                       name="getVolume"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>D</return>
+                  <ops>
+                     <op code="get">volume</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()D"
+                       name="getMileage"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>D</return>
+                  <ops>
+                     <op code="get">mileage</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="TripComputer"><!--Package: main; name: main.TripComputer; file: main.TripComputer-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="Lmain/Car">car</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/Car;)V"
+                       name="setCar"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/Car">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">car</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="showFuelLevel"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">car</op>
+                     <op code="call">
+                        <name>main.Car.getFuel</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="showStatus"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">car</op>
+                     <op code="call">
+                        <name>main.Car.getEngine</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Engine.isStarted</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Car"><!--Package: main; name: main.Car; file: main.Car-->
+            <attributes>
+               <attribute final="true" public="false" static="false" type="Lmain/CarType">carType</attribute>
+               <attribute final="true" public="false" static="false" type="I">seats</attribute>
+               <attribute final="true" public="false" static="false" type="Lmain/Engine">engine</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lmain/Transmission">transmission</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lmain/TripComputer">tripComputer</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lmain/GPSNavigator">gpsNavigator</attribute>
+               <attribute final="false" public="false" static="false" type="D">fuel</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lmain/CarType;ILmain/Engine;Lmain/Transmission;Lmain/TripComputer;Lmain/GPSNavigator;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/CarType">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="Lmain/Engine">?</arg>
+                     <arg type="Lmain/Transmission">?</arg>
+                     <arg type="Lmain/TripComputer">?</arg>
+                     <arg type="Lmain/GPSNavigator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">fuel</op>
+                     <op code="put">carType</op>
+                     <op code="put">seats</op>
+                     <op code="put">engine</op>
+                     <op code="put">transmission</op>
+                     <op code="put">tripComputer</op>
+                     <op code="get">tripComputer</op>
+                     <op code="get">tripComputer</op>
+                     <op code="call">
+                        <name>main.TripComputer.setCar</name>
+                        <args>
+                           <arg type="Lmain/Car">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">gpsNavigator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/CarType;"
+                       name="getCarType"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/CarType</return>
+                  <ops>
+                     <op code="get">carType</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()D"
+                       name="getFuel"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>D</return>
+                  <ops>
+                     <op code="get">fuel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(D)V"
+                       name="setFuel"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="D">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">fuel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getSeats"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">seats</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/Engine;"
+                       name="getEngine"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/Engine</return>
+                  <ops>
+                     <op code="get">engine</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/Transmission;"
+                       name="getTransmission"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/Transmission</return>
+                  <ops>
+                     <op code="get">transmission</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/TripComputer;"
+                       name="getTripComputer"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/TripComputer</return>
+                  <ops>
+                     <op code="get">tripComputer</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/GPSNavigator;"
+                       name="getGpsNavigator"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/GPSNavigator</return>
+                  <ops>
+                     <op code="get">gpsNavigator</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="CarBuilder"><!--Package: main; name: main.CarBuilder; file: main.CarBuilder-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lmain/CarType">type</attribute>
+               <attribute final="false" public="false" static="false" type="I">seats</attribute>
+               <attribute final="false" public="false" static="false" type="Lmain/Engine">engine</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lmain/Transmission">transmission</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lmain/TripComputer">tripComputer</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lmain/GPSNavigator">gpsNavigator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/CarType;)V"
+                       name="setCarType"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/CarType">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">type</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(I)V"
+                       name="setSeats"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">seats</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/Engine;)V"
+                       name="setEngine"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/Engine">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">engine</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/Transmission;)V"
+                       name="setTransmission"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/Transmission">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">transmission</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/TripComputer;)V"
+                       name="setTripComputer"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/TripComputer">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">tripComputer</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/GPSNavigator;)V"
+                       name="setGPSNavigator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/GPSNavigator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">gpsNavigator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/Car;"
+                       name="getResult"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/Car</return>
+                  <ops>
+                     <op code="get">type</op>
+                     <op code="get">seats</op>
+                     <op code="get">engine</op>
+                     <op code="get">transmission</op>
+                     <op code="get">tripComputer</op>
+                     <op code="get">gpsNavigator</op>
+                     <op code="call">
+                        <name>main.Car.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lmain/CarType">?</arg>
+                           <arg type="ILmain/Engine">?</arg>
+                           <arg type="Lmain/Transmission">?</arg>
+                           <arg type="Lmain/TripComputer">?</arg>
+                           <arg type="Lmain/GPSNavigator">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Director"><!--Package: main; name: main.Director; file: main.Director-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/Builder;)V"
+                       name="constructSportsCar"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/Builder">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">main.CarType.SPORTS_CAR</op>
+                     <op code="call">
+                        <name>main.Builder.setCarType</name>
+                        <args>
+                           <arg type="Lmain/CarType">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setSeats</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Engine.&lt;init&gt;</name>
+                        <args>
+                           <arg type="DD">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setEngine</name>
+                        <args>
+                           <arg type="Lmain/Engine">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">main.Transmission.SEMI_AUTOMATIC</op>
+                     <op code="call">
+                        <name>main.Builder.setTransmission</name>
+                        <args>
+                           <arg type="Lmain/Transmission">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.TripComputer.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setTripComputer</name>
+                        <args>
+                           <arg type="Lmain/TripComputer">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.GPSNavigator.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setGPSNavigator</name>
+                        <args>
+                           <arg type="Lmain/GPSNavigator">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/Builder;)V"
+                       name="constructCityCar"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/Builder">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">main.CarType.CITY_CAR</op>
+                     <op code="call">
+                        <name>main.Builder.setCarType</name>
+                        <args>
+                           <arg type="Lmain/CarType">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setSeats</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Engine.&lt;init&gt;</name>
+                        <args>
+                           <arg type="DD">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setEngine</name>
+                        <args>
+                           <arg type="Lmain/Engine">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">main.Transmission.AUTOMATIC</op>
+                     <op code="call">
+                        <name>main.Builder.setTransmission</name>
+                        <args>
+                           <arg type="Lmain/Transmission">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.TripComputer.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setTripComputer</name>
+                        <args>
+                           <arg type="Lmain/TripComputer">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.GPSNavigator.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setGPSNavigator</name>
+                        <args>
+                           <arg type="Lmain/GPSNavigator">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lmain/Builder;)V"
+                       name="constructSUV"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lmain/Builder">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">main.CarType.SUV</op>
+                     <op code="call">
+                        <name>main.Builder.setCarType</name>
+                        <args>
+                           <arg type="Lmain/CarType">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setSeats</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Engine.&lt;init&gt;</name>
+                        <args>
+                           <arg type="DD">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setEngine</name>
+                        <args>
+                           <arg type="Lmain/Engine">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">main.Transmission.MANUAL</op>
+                     <op code="call">
+                        <name>main.Builder.setTransmission</name>
+                        <args>
+                           <arg type="Lmain/Transmission">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.GPSNavigator.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Builder.setGPSNavigator</name>
+                        <args>
+                           <arg type="Lmain/GPSNavigator">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

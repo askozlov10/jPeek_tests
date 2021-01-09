@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T16:01:28.254551700Z"
+        schema="xsd/skeleton.xsd"
+        version="1.0-SNAPSHOT"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>TCC</title>
+   <description>TCC(C) = NDC(C) / NP(C), where C is the class, NP(C) is a
+          maximal possible number of direct or indirect connections - N * (N - 1) / 2,
+          NDC(C) is a number of direct connections.
+          Value of the metric is in range [0, 1], greater is better.
+        </description>
+   <app element="false" id="D:\jpeek_patterns\abstract_factory 2">
+      <package element="false" id="main">
+         <class color="green" element="false" id="MacOSFactory" value="1">
+            <vars>
+               <var id="attributes">0</var>
+               <var id="methods">2</var>
+               <var id="NC">1</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="WindowsFactory" value="1">
+            <vars>
+               <var id="attributes">0</var>
+               <var id="methods">2</var>
+               <var id="NC">1</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="WindowsCheckbox" value="1">
+            <vars>
+               <var id="attributes">0</var>
+               <var id="methods">1</var>
+               <var id="NC">0</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MacOSButton" value="1">
+            <vars>
+               <var id="attributes">0</var>
+               <var id="methods">1</var>
+               <var id="NC">0</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="WindowsButton" value="1">
+            <vars>
+               <var id="attributes">0</var>
+               <var id="methods">1</var>
+               <var id="NC">0</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Application" value="1">
+            <vars>
+               <var id="attributes">2</var>
+               <var id="methods">1</var>
+               <var id="NC">0</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="1">
+            <vars>
+               <var id="attributes">0</var>
+               <var id="methods">0</var>
+               <var id="NC">0</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MacOSCheckbox" value="1">
+            <vars>
+               <var id="attributes">0</var>
+               <var id="methods">1</var>
+               <var id="NC">0</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
+   <min>0</min>
+   <max>0</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 8, steps: 32; all: 0; min: 0; max: 0; delta: 0-->
+      <bar color="yellow" x="0">0</bar>
+      <!--step: 0, left: 0, right: 0-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 0, right: 0-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 0, right: 0-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 0, right: 0-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0, right: 0-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 0, right: 0-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0, right: 0-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 0, right: 0-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0, right: 0-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 0, right: 0-->
+      <bar color="yellow" x="0.3125">0</bar>
+      <!--step: 10, left: 0, right: 0-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0, right: 0-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0, right: 0-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 0, right: 0-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0, right: 0-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 0, right: 0-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0, right: 0-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 0, right: 0-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 0, right: 0-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0, right: 0-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0, right: 0-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0, right: 0-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0, right: 0-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0, right: 0-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0, right: 0-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0, right: 0-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0, right: 0-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0, right: 0-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0, right: 0-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0, right: 0-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0, right: 0-->
+      <bar color="yellow" x="0.96875">0</bar>
+      <!--step: 31, left: 0, right: 0-->
+   </bars>
+   <statistics>
+      <total>8</total>
+      <elements>0</elements>
+      <mean>NaN</mean>
+      <sigma>NaN</sigma>
+      <variance>NaN</variance>
+      <defects>NaN</defects>
+   </statistics>
+</metric>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2021-01-08T09:15:33.593Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Bridge/out/production/Bridge/ex3">
+      <package id="ex3">
+         <class id="Shape"><!--Package: ex3; name: ex3.Shape; file: ex3.Shape-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="Lex3/Color">color</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex3/Color;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex3/Color">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">color</op>
+                  </ops>
+               </method>
+               <method abstract="true"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="applyColor"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+               </method>
+            </methods>
+         </class>
+         <class id="Main"><!--Package: ex3; name: ex3.Main; file: ex3.Main-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex3.RedColor.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex3.Triangle.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex3/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex3.Shape.applyColor</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex3.GreenColor.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex3.Pentagon.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex3/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex3.Shape.applyColor</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="GreenColor"><!--Package: ex3; name: ex3.GreenColor; file: ex3.GreenColor-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="applyColor"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="RedColor"><!--Package: ex3; name: ex3.RedColor; file: ex3.RedColor-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="applyColor"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Pentagon"><!--Package: ex3; name: ex3.Pentagon; file: ex3.Pentagon-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex3/Color;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex3/Color">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex3.Shape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex3/Color">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="applyColor"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.print</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">color</op>
+                     <op code="call">
+                        <name>ex3.Color.applyColor</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Triangle"><!--Package: ex3; name: ex3.Triangle; file: ex3.Triangle-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex3/Color;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex3/Color">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex3.Shape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex3/Color">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="applyColor"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.print</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">color</op>
+                     <op code="call">
+                        <name>ex3.Color.applyColor</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

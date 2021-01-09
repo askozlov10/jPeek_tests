@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T14:52:44.979169200Z"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="org.jpeek.patterns.example2.Example2Demo"
+             rank="0.7714"
+             short_id="o.j.p.e.Example2Demo"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.FileWriterCaretaker"
+             rank="0.8000"
+             short_id="o.j.p.e.FileWriterCaretaker"
+             trust="0.33333333333333337">
+         <metric color="yellow" name="CCM" rank="3"/>
+         <metric color="green" name="LCC" rank="5"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="red" name="LCOM4" rank="1"/>
+         <metric color="green" name="LCOM5" rank="5"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.FileWriterUtil"
+             rank="0.7429"
+             short_id="o.j.p.e.FileWriterUtil"
+             trust="0.33333333333333337">
+         <metric color="red" name="CCM" rank="1"/>
+         <metric color="green" name="LCC" rank="5"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="green" name="LCOM5" rank="5"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="yellow" name="NHD" rank="3"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.FileWriterUtil$Memento"
+             rank="0.8286"
+             short_id="o.j.p.e.F..$Memento"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="green" name="LCOM5" rank="5"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+   </classes>
+</matrix>

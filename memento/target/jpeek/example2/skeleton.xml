@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T14:52:42.246941300Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\memento\out\production\memento\org\jpeek\patterns\example2">
+      <package id="org.jpeek.patterns.example2">
+         <class id="FileWriterUtil$Memento"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.FileWriterUtil$Memento; file: org.jpeek.patterns.example2.FileWriterUtil$Memento-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">fileName</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/StringBuilder">content</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example2/FileWriterUtil">this$0</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lorg/jpeek/patterns/example2/FileWriterUtil;Ljava/lang/String;Ljava/lang/StringBuilder;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example2/FileWriterUtil">?</arg>
+                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Ljava/lang/StringBuilder">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">this$0</op>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">fileName</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/CharSequence">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">content</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="FileWriterCaretaker"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.FileWriterCaretaker; file: org.jpeek.patterns.example2.FileWriterCaretaker-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/Object">obj</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example2/FileWriterUtil;)V"
+                       name="save"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example2/FileWriterUtil">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterUtil.save</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">obj</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example2/FileWriterUtil;)V"
+                       name="undo"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example2/FileWriterUtil">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">obj</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterUtil.undoToLastSave</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="FileWriterUtil"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.FileWriterUtil; file: org.jpeek.patterns.example2.FileWriterUtil-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">fileName</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/StringBuilder">content</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">fileName</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">content</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="toString"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">content</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.toString</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="write"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">content</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lorg/jpeek/patterns/example2/FileWriterUtil$Memento;"
+                       name="save"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lorg/jpeek/patterns/example2/FileWriterUtil$Memento</return>
+                  <ops>
+                     <op code="get">fileName</op>
+                     <op code="get">content</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterUtil$Memento.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example2/FileWriterUtil">?</arg>
+                           <arg type="Ljava/lang/String">?</arg>
+                           <arg type="Ljava/lang/StringBuilder">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/Object;)V"
+                       name="undoToLastSave"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/Object">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">fileName</op>
+                     <op code="put">fileName</op>
+                     <op code="get">content</op>
+                     <op code="put">content</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Example2Demo"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.Example2Demo; file: org.jpeek.patterns.example2.Example2Demo-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterCaretaker.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterUtil.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterUtil.write</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterCaretaker.save</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example2/FileWriterUtil">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterUtil.write</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.FileWriterCaretaker.undo</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example2/FileWriterUtil">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

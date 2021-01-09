@@ -1,0 +1,1662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2021-01-09T06:52:25.387Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex1">
+      <package id="ex1">
+         <class id="ImageEditor"><!--Package: ex1; name: ex1.ImageEditor; file: ex1.ImageEditor-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lex1/ImageEditor$EditorCanvas">canvas</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lex1/CompoundShape">allShapes</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[Lex1/Shape">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">allShapes</op>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex1/ImageEditor">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">canvas</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Lex1/Shape;)V"
+                       name="loadShapes"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/Shape">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">allShapes</op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.clear</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">allShapes</op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.add</name>
+                        <args>
+                           <arg type="[Lex1/Shape">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">canvas</op>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas.refresh</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="BaseShape"><!--Package: ex1; name: ex1.BaseShape; file: ex1.BaseShape-->
+            <attributes>
+               <attribute final="false" public="true" static="false" type="I">x</attribute>
+               <attribute final="false" public="true" static="false" type="I">y</attribute>
+               <attribute final="false"
+                          public="true"
+                          static="false"
+                          type="Ljava/awt/Color">color</attribute>
+               <attribute final="false" public="false" static="false" type="Z">selected</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(IILjava/awt/Color;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="Ljava/awt/Color">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">selected</op>
+                     <op code="put">x</op>
+                     <op code="put">y</op>
+                     <op code="put">color</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getX"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">x</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getY"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">y</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getWidth"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getHeight"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(II)V"
+                       name="move"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">x</op>
+                     <op code="put">x</op>
+                     <op code="get">y</op>
+                     <op code="put">y</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(II)Z"
+                       name="isInsideBounds"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>Z</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BaseShape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BaseShape.getWidth</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BaseShape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BaseShape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BaseShape.getHeight</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="select"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">selected</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="unSelect"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">selected</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Z"
+                       name="isSelected"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Z</return>
+                  <ops>
+                     <op code="get">selected</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/Graphics;)V"
+                       name="enableSelectionStyle"
+                       static="false"
+                       visibility="default">
+                  <args>
+                     <arg type="Ljava/awt/Graphics">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.awt.Color.LIGHT_GRAY</op>
+                     <op code="call">
+                        <name>java.awt.Graphics.setColor</name>
+                        <args>
+                           <arg type="Ljava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.BasicStroke.&lt;init&gt;</name>
+                        <args>
+                           <arg type="FIIF[FF">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Graphics2D.setStroke</name>
+                        <args>
+                           <arg type="Ljava/awt/Stroke">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/Graphics;)V"
+                       name="disableSelectionStyle"
+                       static="false"
+                       visibility="default">
+                  <args>
+                     <arg type="Ljava/awt/Graphics">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">color</op>
+                     <op code="call">
+                        <name>java.awt.Graphics.setColor</name>
+                        <args>
+                           <arg type="Ljava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.BasicStroke.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Graphics2D.setStroke</name>
+                        <args>
+                           <arg type="Ljava/awt/Stroke">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/Graphics;)V"
+                       name="paint"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/awt/Graphics">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.isSelected</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BaseShape.enableSelectionStyle</name>
+                        <args>
+                           <arg type="Ljava/awt/Graphics">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BaseShape.disableSelectionStyle</name>
+                        <args>
+                           <arg type="Ljava/awt/Graphics">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Circle"><!--Package: ex1; name: ex1.Circle; file: ex1.Circle-->
+            <attributes>
+               <attribute final="false" public="true" static="false" type="I">radius</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(IIILjava/awt/Color;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="Ljava/awt/Color">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">radius</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getWidth"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">radius</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getHeight"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">radius</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/Graphics;)V"
+                       name="paint"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/awt/Graphics">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.paint</name>
+                        <args>
+                           <arg type="Ljava/awt/Graphics">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">x</op>
+                     <op code="get">y</op>
+                     <op code="call">
+                        <name>ex1.Circle.getWidth</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Circle.getHeight</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Graphics.drawOval</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Dot"><!--Package: ex1; name: ex1.Dot; file: ex1.Dot-->
+            <attributes>
+               <attribute final="true" public="false" static="false" type="I">DOT_SIZE</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(IILjava/awt/Color;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="Ljava/awt/Color">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">DOT_SIZE</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getWidth"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getHeight"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/Graphics;)V"
+                       name="paint"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/awt/Graphics">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.paint</name>
+                        <args>
+                           <arg type="Ljava/awt/Graphics">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">x</op>
+                     <op code="get">y</op>
+                     <op code="call">
+                        <name>ex1.Dot.getWidth</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Dot.getHeight</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Graphics.fillRect</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Main"><!--Package: ex1; name: ex1.Main; file: ex1.Main-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.ImageEditor.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.BLUE</op>
+                     <op code="call">
+                        <name>ex1.Circle.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IIILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.RED</op>
+                     <op code="call">
+                        <name>ex1.Circle.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IIILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.RED</op>
+                     <op code="call">
+                        <name>ex1.Dot.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[Lex1/Shape">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.GREEN</op>
+                     <op code="call">
+                        <name>ex1.Rectangle.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IIIILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.GREEN</op>
+                     <op code="call">
+                        <name>ex1.Dot.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.GREEN</op>
+                     <op code="call">
+                        <name>ex1.Dot.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.GREEN</op>
+                     <op code="call">
+                        <name>ex1.Dot.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.GREEN</op>
+                     <op code="call">
+                        <name>ex1.Dot.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[Lex1/Shape">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.ImageEditor.loadShapes</name>
+                        <args>
+                           <arg type="[Lex1/Shape">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="ImageEditor$EditorCanvas"><!--Package: ex1; name: ex1.ImageEditor$EditorCanvas; file: ex1.ImageEditor$EditorCanvas-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/JFrame">frame</attribute>
+               <attribute final="true" public="false" static="true" type="I">PADDING</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lex1/ImageEditor">this$0</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex1/ImageEditor;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args>
+                     <arg type="Lex1/ImageEditor">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">this$0</op>
+                     <op code="call">
+                        <name>java.awt.Canvas.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas.createFrame</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas.refresh</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas$1.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex1/ImageEditor$EditorCanvas">?</arg>
+                           <arg type="Lex1/ImageEditor">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas.addMouseListener</name>
+                        <args>
+                           <arg type="Ljava/awt/event/MouseListener">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="createFrame"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JFrame.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">frame</op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setDefaultCloseOperation</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setLocationRelativeTo</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.BorderFactory.createEmptyBorder</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setBorder</name>
+                        <args>
+                           <arg type="Ljavax/swing/border/Border">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setContentPane</name>
+                        <args>
+                           <arg type="Ljava/awt/Container">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.getContentPane</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.LIGHT_GRAY</op>
+                     <op code="call">
+                        <name>java.awt.Container.setBackground</name>
+                        <args>
+                           <arg type="Ljava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getWidth"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">this$0</op>
+                     <op code="get">allShapes</op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">this$0</op>
+                     <op code="get">allShapes</op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getWidth</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getHeight"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">this$0</op>
+                     <op code="get">allShapes</op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">this$0</op>
+                     <op code="get">allShapes</op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getHeight</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="refresh"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas.getWidth</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas.getHeight</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.ImageEditor$EditorCanvas.setSize</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.pack</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/Graphics;)V"
+                       name="paint"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/awt/Graphics">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">this$0</op>
+                     <op code="get">allShapes</op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.paint</name>
+                        <args>
+                           <arg type="Ljava/awt/Graphics">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Rectangle"><!--Package: ex1; name: ex1.Rectangle; file: ex1.Rectangle-->
+            <attributes>
+               <attribute final="false" public="true" static="false" type="I">width</attribute>
+               <attribute final="false" public="true" static="false" type="I">height</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(IIIILjava/awt/Color;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                     <arg type="Ljava/awt/Color">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">width</op>
+                     <op code="put">height</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getWidth"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">width</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getHeight"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">height</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/Graphics;)V"
+                       name="paint"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/awt/Graphics">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.paint</name>
+                        <args>
+                           <arg type="Ljava/awt/Graphics">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">x</op>
+                     <op code="get">y</op>
+                     <op code="call">
+                        <name>ex1.Rectangle.getWidth</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Rectangle.getHeight</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Graphics.drawRect</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="CompoundShape"><!--Package: ex1; name: ex1.CompoundShape; file: ex1.CompoundShape-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/List">children</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="([Lex1/Shape;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/Shape">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.awt.Color.BLACK</op>
+                     <op code="call">
+                        <name>ex1.BaseShape.&lt;init&gt;</name>
+                        <args>
+                           <arg type="IILjava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">children</op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.add</name>
+                        <args>
+                           <arg type="[Lex1/Shape">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lex1/Shape;)V"
+                       name="add"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/Shape">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Lex1/Shape;)V"
+                       name="add"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/Shape">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.Arrays.asList</name>
+                        <args>
+                           <arg type="[Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.List.addAll</name>
+                        <args>
+                           <arg type="Ljava/util/Collection">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lex1/Shape;)V"
+                       name="remove"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/Shape">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.remove</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Lex1/Shape;)V"
+                       name="remove"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/Shape">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.Arrays.asList</name>
+                        <args>
+                           <arg type="[Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.List.removeAll</name>
+                        <args>
+                           <arg type="Ljava/util/Collection">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="clear"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.clear</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getX"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.size</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.get</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getY"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.size</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.get</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getWidth"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getWidth</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getHeight"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.getHeight</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(II)V"
+                       name="move"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.move</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(II)Z"
+                       name="isInsideBounds"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>Z</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.isInsideBounds</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="unSelect"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.BaseShape.unSelect</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.unSelect</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(II)Z"
+                       name="selectChildAt"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>Z</return>
+                  <ops>
+                     <op code="get">children</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.isInsideBounds</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Shape.select</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/Graphics;)V"
+                       name="paint"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/awt/Graphics">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.CompoundShape.isSelected</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.enableSelectionStyle</name>
+                        <args>
+                           <arg type="Ljava/awt/Graphics">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getX</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getY</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getWidth</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.getHeight</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Graphics.drawRect</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompoundShape.disableSelectionStyle</name>
+                        <args>
+                           <arg type="Ljava/awt/Graphics">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

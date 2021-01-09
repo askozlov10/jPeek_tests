@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-21T15:39:58.194274600Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\iterator\out\production\iterator\org\jpeek\patterns\example1">
+      <package id="org.jpeek.patterns.example1">
+         <class id="Channel"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Channel; file: org.jpeek.patterns.example1.Channel-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="D">frequency</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example1/ChannelTypeEnum">TYPE</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(DLorg/jpeek/patterns/example1/ChannelTypeEnum;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="D">?</arg>
+                     <arg type="Lorg/jpeek/patterns/example1/ChannelTypeEnum">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">frequency</op>
+                     <op code="put">TYPE</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()D"
+                       name="getFrequency"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>D</return>
+                  <ops>
+                     <op code="get">frequency</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lorg/jpeek/patterns/example1/ChannelTypeEnum;"
+                       name="getTYPE"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lorg/jpeek/patterns/example1/ChannelTypeEnum</return>
+                  <ops>
+                     <op code="get">TYPE</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="toString"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">frequency</op>
+                     <op code="get">TYPE</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="ChannelCollectionImpl"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.ChannelCollectionImpl; file: org.jpeek.patterns.example1.ChannelCollectionImpl-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/List">channelsList</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">channelsList</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/Channel;)V"
+                       name="addChannel"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/Channel">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">channelsList</op>
+                     <op code="call">
+                        <name>java.util.List.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/Channel;)V"
+                       name="removeChannel"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/Channel">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">channelsList</op>
+                     <op code="call">
+                        <name>java.util.List.remove</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/ChannelTypeEnum;)Lorg/jpeek/patterns/example1/ChannelIterator;"
+                       name="iterator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/ChannelTypeEnum">?</arg>
+                  </args>
+                  <return>Lorg/jpeek/patterns/example1/ChannelIterator</return>
+                  <ops>
+                     <op code="get">channelsList</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.ChannelIteratorImpl.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/ChannelTypeEnum">?</arg>
+                           <arg type="Ljava/util/List">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="ChannelIteratorImpl"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.ChannelIteratorImpl; file: org.jpeek.patterns.example1.ChannelIteratorImpl-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example1/ChannelTypeEnum">type</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/List">channels</attribute>
+               <attribute final="false" public="false" static="false" type="I">position</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lorg/jpeek/patterns/example1/ChannelTypeEnum;Ljava/util/List;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/ChannelTypeEnum">?</arg>
+                     <arg type="Ljava/util/List">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">type</op>
+                     <op code="put">channels</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Z"
+                       name="hasNext"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Z</return>
+                  <ops>
+                     <op code="get">position</op>
+                     <op code="get">channels</op>
+                     <op code="call">
+                        <name>java.util.List.size</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">channels</op>
+                     <op code="get">position</op>
+                     <op code="call">
+                        <name>java.util.List.get</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Channel.getTYPE</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">type</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.ChannelTypeEnum.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">type</op>
+                     <op code="get_static">org.jpeek.patterns.example1.ChannelTypeEnum.ALL</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.ChannelTypeEnum.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">position</op>
+                     <op code="put">position</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lorg/jpeek/patterns/example1/Channel;"
+                       name="next"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lorg/jpeek/patterns/example1/Channel</return>
+                  <ops>
+                     <op code="get">channels</op>
+                     <op code="get">position</op>
+                     <op code="call">
+                        <name>java.util.List.get</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">position</op>
+                     <op code="put">position</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

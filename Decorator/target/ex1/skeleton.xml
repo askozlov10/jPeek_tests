@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2021-01-09T08:44:24.859Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Decorator/out/production/Decorator/ex1">
+      <package id="ex1">
+         <class id="DataSourceDecorator"><!--Package: ex1; name: ex1.DataSourceDecorator; file: ex1.DataSourceDecorator-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lex1/DataSource">wrappee</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex1/DataSource;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args>
+                     <arg type="Lex1/DataSource">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">wrappee</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="writeData"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">wrappee</op>
+                     <op code="call">
+                        <name>ex1.DataSource.writeData</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="readData"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">wrappee</op>
+                     <op code="call">
+                        <name>ex1.DataSource.readData</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="EncryptionDecorator"><!--Package: ex1; name: ex1.EncryptionDecorator; file: ex1.EncryptionDecorator-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex1/DataSource;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/DataSource">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.DataSourceDecorator.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex1/DataSource">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="writeData"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.EncryptionDecorator.encode</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.DataSourceDecorator.writeData</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="readData"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.DataSourceDecorator.readData</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.EncryptionDecorator.decode</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)Ljava/lang/String;"
+                       name="encode"
+                       static="false"
+                       visibility="private">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.String.getBytes</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Base64.getEncoder</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Base64$Encoder.encodeToString</name>
+                        <args>
+                           <arg type="[B">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)Ljava/lang/String;"
+                       name="decode"
+                       static="false"
+                       visibility="private">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.util.Base64.getDecoder</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Base64$Decoder.decode</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[B">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Main"><!--Package: ex1; name: ex1.Main; file: ex1.Main-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.FileDataSource.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.EncryptionDecorator.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex1/DataSource">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompressionDecorator.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex1/DataSource">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.DataSourceDecorator.writeData</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.FileDataSource.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>ex1.DataSource.readData</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>ex1.DataSourceDecorator.readData</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="FileDataSource"><!--Package: ex1; name: ex1.FileDataSource; file: ex1.FileDataSource-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">name</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">name</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="writeData"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">name</op>
+                     <op code="call">
+                        <name>java.io.File.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileOutputStream.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/File">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.getBytes</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.length</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.OutputStream.write</name>
+                        <args>
+                           <arg type="[BII">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.OutputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.OutputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Throwable.addSuppressed</name>
+                        <args>
+                           <arg type="Ljava/lang/Throwable">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.IOException.getMessage</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="readData"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">name</op>
+                     <op code="call">
+                        <name>java.io.File.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileReader.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/File">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.File.length</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileReader.read</name>
+                        <args>
+                           <arg type="[C">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileReader.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileReader.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Throwable.addSuppressed</name>
+                        <args>
+                           <arg type="Ljava/lang/Throwable">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.IOException.getMessage</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[C">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="CompressionDecorator"><!--Package: ex1; name: ex1.CompressionDecorator; file: ex1.CompressionDecorator-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="I">compLevel</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex1/DataSource;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/DataSource">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.DataSourceDecorator.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex1/DataSource">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">compLevel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getCompressionLevel"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">compLevel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(I)V"
+                       name="setCompressionLevel"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">compLevel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="writeData"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.CompressionDecorator.compress</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.DataSourceDecorator.writeData</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="readData"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex1.DataSourceDecorator.readData</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.CompressionDecorator.decompress</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)Ljava/lang/String;"
+                       name="compress"
+                       static="false"
+                       visibility="private">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.String.getBytes</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.ByteArrayOutputStream.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">compLevel</op>
+                     <op code="call">
+                        <name>java.util.zip.Deflater.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.zip.DeflaterOutputStream.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/OutputStream">?</arg>
+                           <arg type="Ljava/util/zip/Deflater">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.zip.DeflaterOutputStream.write</name>
+                        <args>
+                           <arg type="[B">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.zip.DeflaterOutputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.ByteArrayOutputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Base64.getEncoder</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.ByteArrayOutputStream.toByteArray</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Base64$Encoder.encodeToString</name>
+                        <args>
+                           <arg type="[B">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)Ljava/lang/String;"
+                       name="decompress"
+                       static="false"
+                       visibility="private">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.util.Base64.getDecoder</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Base64$Decoder.decode</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.ByteArrayInputStream.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[B">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.zip.InflaterInputStream.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/InputStream">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.ByteArrayOutputStream.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.zip.InflaterInputStream.read</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.ByteArrayOutputStream.write</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.InputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.zip.InflaterInputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.ByteArrayOutputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.ByteArrayOutputStream.toByteArray</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[B">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

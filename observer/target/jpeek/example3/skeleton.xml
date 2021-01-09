@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T14:51:20.836166900Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\observer\out\production\observer\org\jpeek\patterns\example3">
+      <package id="org.jpeek.patterns.example3">
+         <class id="MyTopicSubscriber"><!--Package: org.jpeek.patterns.example3; name: org.jpeek.patterns.example3.MyTopicSubscriber; file: org.jpeek.patterns.example3.MyTopicSubscriber-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">name</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example3/Subject">topic</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">name</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="update"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">topic</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.Subject.getUpdate</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">name</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">name</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example3/Subject;)V"
+                       name="setSubject"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example3/Subject">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">topic</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Example3Demo"><!--Package: org.jpeek.patterns.example3; name: org.jpeek.patterns.example3.Example3Demo; file: org.jpeek.patterns.example3.Example3Demo-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopicSubscriber.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopicSubscriber.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopicSubscriber.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.register</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.register</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.register</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.Observer.setSubject</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Subject">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.Observer.setSubject</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Subject">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.Observer.setSubject</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Subject">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.Observer.update</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.postMessage</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.unregister</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.unregister</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.unregister</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="MyTopic"><!--Package: org.jpeek.patterns.example3; name: org.jpeek.patterns.example3.MyTopic; file: org.jpeek.patterns.example3.MyTopic-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/List">observers</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">message</attribute>
+               <attribute final="false" public="false" static="false" type="Z">changed</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/Object">MUTEX</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">MUTEX</op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">observers</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example3/Observer;)V"
+                       name="register"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.NullPointerException.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">MUTEX</op>
+                     <op code="get">observers</op>
+                     <op code="call">
+                        <name>java.util.List.contains</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">observers</op>
+                     <op code="call">
+                        <name>java.util.List.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example3/Observer;)V"
+                       name="unregister"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">MUTEX</op>
+                     <op code="get">observers</op>
+                     <op code="call">
+                        <name>java.util.List.remove</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="notifyObservers"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">MUTEX</op>
+                     <op code="get">changed</op>
+                     <op code="get">observers</op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/util/Collection">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">changed</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.Observer.update</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example3/Observer;)Ljava/lang/Object;"
+                       name="getUpdate"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example3/Observer">?</arg>
+                  </args>
+                  <return>Ljava/lang/Object</return>
+                  <ops>
+                     <op code="get">message</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="postMessage"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">message</op>
+                     <op code="put">changed</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example3.MyTopic.notifyObservers</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

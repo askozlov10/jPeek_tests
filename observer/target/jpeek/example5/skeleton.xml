@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T14:51:57.150503200Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\observer\out\production\observer\org\jpeek\patterns\example5">
+      <package id="org.jpeek.patterns.example5">
+         <class id="NewsChannel"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.NewsChannel; file: org.jpeek.patterns.example5.NewsChannel-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">news</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/Object;)V"
+                       name="update"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/Object">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.NewsChannel.setNews</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="setNews"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">news</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Example5Demo"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.Example5Demo; file: org.jpeek.patterns.example5.Example5Demo-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.NewsAgency.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.NewsChannel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.NewsAgency.addObserver</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Channel">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.NewsAgency.setNews</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="NewsAgency"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.NewsAgency; file: org.jpeek.patterns.example5.NewsAgency-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">news</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/List">channels</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">channels</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Channel;)V"
+                       name="addObserver"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Channel">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">channels</op>
+                     <op code="call">
+                        <name>java.util.List.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Channel;)V"
+                       name="removeObserver"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Channel">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">channels</op>
+                     <op code="call">
+                        <name>java.util.List.remove</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="setNews"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">news</op>
+                     <op code="get">channels</op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">news</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Channel.update</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

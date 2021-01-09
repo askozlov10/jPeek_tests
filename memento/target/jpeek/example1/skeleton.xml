@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T14:52:22.549406100Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\memento\out\production\memento\org\jpeek\patterns\example1">
+      <package id="org.jpeek.patterns.example1">
+         <class id="Memento"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Memento; file: org.jpeek.patterns.example1.Memento-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">state</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">state</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getState"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">state</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Caretaker"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Caretaker; file: org.jpeek.patterns.example1.Caretaker-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/List">mementoList</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">mementoList</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/Memento;)V"
+                       name="add"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/Memento">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">mementoList</op>
+                     <op code="call">
+                        <name>java.util.List.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(I)Lorg/jpeek/patterns/example1/Memento;"
+                       name="get"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>Lorg/jpeek/patterns/example1/Memento</return>
+                  <ops>
+                     <op code="get">mementoList</op>
+                     <op code="call">
+                        <name>java.util.List.get</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Originator"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Originator; file: org.jpeek.patterns.example1.Originator-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">state</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="setState"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">state</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getState"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">state</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lorg/jpeek/patterns/example1/Memento;"
+                       name="saveStateToMemento"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lorg/jpeek/patterns/example1/Memento</return>
+                  <ops>
+                     <op code="get">state</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Memento.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/Memento;)V"
+                       name="getStateFromMemento"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/Memento">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Memento.getState</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">state</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Example1Demo"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Example1Demo; file: org.jpeek.patterns.example1.Example1Demo-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Caretaker.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.setState</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.saveStateToMemento</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Caretaker.add</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Memento">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.setState</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.saveStateToMemento</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Caretaker.add</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Memento">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.setState</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.saveStateToMemento</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Caretaker.add</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Memento">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.setState</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.getState</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Caretaker.get</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.getStateFromMemento</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Memento">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.getState</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Caretaker.get</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.getStateFromMemento</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Memento">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.getState</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Caretaker.get</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.getStateFromMemento</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Memento">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Originator.getState</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

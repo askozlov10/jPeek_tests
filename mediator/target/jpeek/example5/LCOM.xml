@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T01:52:29.960966200Z"
+        schema="xsd/skeleton.xsd"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>LCOM</title>
+   <description>LCOM is calculated as the number of pairs of methods
+          operating on disjoint sets of instance variables,
+          reduced by the number of method pairs acting on at
+          least one shared instance variable.
+          Say, there are 5 methods in a class. This means that there are 10
+          pairs of methods (`5 * 4 / 2`). Now, we need to see how many of these
+          pairs are using at least one and the same attribute (Nonempty) and how many
+          of them are not using any similar attributes (Empty). Then, we
+          just do `LCOM = Empty - Nonempty`. The metric can be really big,
+          starting from zero and up to any possible number. The bigger the
+          value the least cohesive is the class. A perfect design would have
+          `LCOM=0`.</description>
+   <app element="false"
+        id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\mediator\out\production\mediator\org\jpeek\patterns\example5">
+      <package element="false" id="org.jpeek.patterns.example5">
+         <class color="green" element="true" id="Title" value="1">
+            <vars>
+               <var id="methods">3</var>
+               <var id="pairs">3</var>
+               <var id="empty">2</var>
+               <var id="nonempty">1</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="SaveButton" value="1">
+            <vars>
+               <var id="methods">3</var>
+               <var id="pairs">3</var>
+               <var id="empty">2</var>
+               <var id="nonempty">1</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="Note" value="2">
+            <vars>
+               <var id="methods">5</var>
+               <var id="pairs">10</var>
+               <var id="empty">6</var>
+               <var id="nonempty">4</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="AddButton" value="1">
+            <vars>
+               <var id="methods">3</var>
+               <var id="pairs">3</var>
+               <var id="empty">2</var>
+               <var id="nonempty">1</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="DeleteButton" value="1">
+            <vars>
+               <var id="methods">3</var>
+               <var id="pairs">3</var>
+               <var id="empty">2</var>
+               <var id="nonempty">1</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="TextBox" value="1">
+            <vars>
+               <var id="methods">3</var>
+               <var id="pairs">3</var>
+               <var id="empty">2</var>
+               <var id="nonempty">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="List$Hide" value="0">
+            <vars>
+               <var id="methods">1</var>
+               <var id="pairs">0</var>
+               <var id="empty">0</var>
+               <var id="nonempty">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Example5Demo" value="0">
+            <vars>
+               <var id="methods">0</var>
+               <var id="pairs">0</var>
+               <var id="empty">0</var>
+               <var id="nonempty">0</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="List" value="4">
+            <vars>
+               <var id="methods">5</var>
+               <var id="pairs">10</var>
+               <var id="empty">7</var>
+               <var id="nonempty">3</var>
+            </vars>
+         </class>
+         <class color="yellow" element="false" id="Filter" value="6">
+            <vars>
+               <var id="methods">4</var>
+               <var id="pairs">6</var>
+               <var id="empty">6</var>
+               <var id="nonempty">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Editor" value="0">
+            <vars>
+               <var id="methods">11</var>
+               <var id="pairs">55</var>
+               <var id="empty">17</var>
+               <var id="nonempty">38</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="5" low="15">[15.0000 .. 5.0000]</colors>
+   <min>1</min>
+   <max>4</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 11, steps: 32; all: 7; min: 1; max: 4; delta: 0.09375-->
+      <bar color="green" x="0">5</bar>
+      <!--step: 0, left: 1, right: 1.09375-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 1.09375, right: 1.1875-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 1.1875, right: 1.28125-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 1.28125, right: 1.375-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 1.375, right: 1.46875-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 1.46875, right: 1.5625-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 1.5625, right: 1.65625-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 1.65625, right: 1.75-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 1.75, right: 1.84375-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 1.84375, right: 1.9375-->
+      <bar color="green" x="0.3125">1</bar>
+      <!--step: 10, left: 1.9375, right: 2.03125-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 2.03125, right: 2.125-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 2.125, right: 2.21875-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 2.21875, right: 2.3125-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 2.3125, right: 2.40625-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 2.40625, right: 2.5-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 2.5, right: 2.59375-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 2.59375, right: 2.6875-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 2.6875, right: 2.78125-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 2.78125, right: 2.875-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 2.875, right: 2.96875-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 2.96875, right: 3.0625-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 3.0625, right: 3.15625-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 3.15625, right: 3.25-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 3.25, right: 3.34375-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 3.34375, right: 3.4375-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 3.4375, right: 3.53125-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 3.53125, right: 3.625-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 3.625, right: 3.71875-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 3.71875, right: 3.8125-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 3.8125, right: 3.90625-->
+      <bar color="green" x="0.96875">1</bar>
+      <!--step: 31, left: 3.90625, right: 4-->
+   </bars>
+   <statistics>
+      <total>11</total>
+      <elements>7</elements>
+      <mean>1.5714285714285714</mean>
+      <sigma>1.049781318335648</sigma>
+      <variance>1.1020408163265307</variance>
+      <defects>0.14285714285714285</defects>
+   </statistics>
+</metric>

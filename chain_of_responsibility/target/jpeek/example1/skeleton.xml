@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-21T14:55:47.059969700Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\chain_of_responsibility\out\production\chain_of_responsibility\org\jpeek\patterns\example1">
+      <package id="org.jpeek.patterns.example1">
+         <class id="Currency"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Currency; file: org.jpeek.patterns.example1.Currency-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="I">amount</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(I)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">amount</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getAmount"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">amount</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Dollar50Dispenser"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Dollar50Dispenser; file: org.jpeek.patterns.example1.Dollar50Dispenser-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example1/DispenseChain">chain</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/DispenseChain;)V"
+                       name="setNextChain"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/DispenseChain">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">chain</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/Currency;)V"
+                       name="dispense"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">chain</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.dispense</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">chain</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.dispense</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Dollar10Dispenser"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Dollar10Dispenser; file: org.jpeek.patterns.example1.Dollar10Dispenser-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example1/DispenseChain">chain</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/DispenseChain;)V"
+                       name="setNextChain"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/DispenseChain">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">chain</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/Currency;)V"
+                       name="dispense"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">chain</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.dispense</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">chain</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.dispense</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Dollar20Dispenser"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Dollar20Dispenser; file: org.jpeek.patterns.example1.Dollar20Dispenser-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example1/DispenseChain">chain</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/DispenseChain;)V"
+                       name="setNextChain"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/DispenseChain">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">chain</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example1/Currency;)V"
+                       name="dispense"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.getAmount</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">chain</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.dispense</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">chain</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.dispense</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="ATMDispenseChain"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.ATMDispenseChain; file: org.jpeek.patterns.example1.ATMDispenseChain-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example1/DispenseChain">c1</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Dollar50Dispenser.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">c1</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Dollar20Dispenser.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Dollar10Dispenser.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">c1</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.setNextChain</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/DispenseChain">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.setNextChain</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/DispenseChain">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.ATMDispenseChain.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.in</op>
+                     <op code="call">
+                        <name>java.util.Scanner.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/InputStream">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Scanner.nextInt</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">c1</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Currency.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.DispenseChain.dispense</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example1/Currency">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

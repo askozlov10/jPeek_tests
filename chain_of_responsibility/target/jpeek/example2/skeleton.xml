@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-21T14:57:50.488868100Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\chain_of_responsibility\out\production\chain_of_responsibility\org\jpeek\patterns\example2">
+      <package id="org.jpeek.patterns.example2">
+         <class id="ErrorBasedLogger"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.ErrorBasedLogger; file: org.jpeek.patterns.example2.ErrorBasedLogger-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(I)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">levels</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="displayLogInfo"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="ConsoleBasedLogger"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.ConsoleBasedLogger; file: org.jpeek.patterns.example2.ConsoleBasedLogger-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(I)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">levels</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="displayLogInfo"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="DebugBasedLogger"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.DebugBasedLogger; file: org.jpeek.patterns.example2.DebugBasedLogger-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(I)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">levels</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="displayLogInfo"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Logger"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.Logger; file: org.jpeek.patterns.example2.Logger-->
+            <attributes>
+               <attribute final="false" public="true" static="true" type="I">OUTPUTINFO</attribute>
+               <attribute final="false" public="true" static="true" type="I">ERRORINFO</attribute>
+               <attribute final="false" public="true" static="true" type="I">DEBUGINFO</attribute>
+               <attribute final="false" public="false" static="false" type="I">levels</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example2/Logger">nextLevelLogger</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example2/Logger;)V"
+                       name="setNextLevelLogger"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example2/Logger">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">nextLevelLogger</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(ILjava/lang/String;)V"
+                       name="logMessage"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">levels</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.displayLogInfo</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">nextLevelLogger</op>
+                     <op code="get">nextLevelLogger</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.logMessage</name>
+                        <args>
+                           <arg type="ILjava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="true"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="displayLogInfo"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;clinit&gt;"
+                       static="true"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put_static">org.jpeek.patterns.example2.Logger.OUTPUTINFO</op>
+                     <op code="put_static">org.jpeek.patterns.example2.Logger.ERRORINFO</op>
+                     <op code="put_static">org.jpeek.patterns.example2.Logger.DEBUGINFO</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="ChainOfResponsibilityClient"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.ChainOfResponsibilityClient; file: org.jpeek.patterns.example2.ChainOfResponsibilityClient-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lorg/jpeek/patterns/example2/Logger;"
+                       name="doChaining"
+                       static="true"
+                       visibility="private">
+                  <args/>
+                  <return>Lorg/jpeek/patterns/example2/Logger</return>
+                  <ops>
+                     <op code="get_static">org.jpeek.patterns.example2.Logger.OUTPUTINFO</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.ConsoleBasedLogger.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">org.jpeek.patterns.example2.Logger.ERRORINFO</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.ErrorBasedLogger.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.setNextLevelLogger</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example2/Logger">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">org.jpeek.patterns.example2.Logger.DEBUGINFO</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.DebugBasedLogger.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.setNextLevelLogger</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example2/Logger">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.ChainOfResponsibilityClient.doChaining</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">org.jpeek.patterns.example2.Logger.OUTPUTINFO</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.logMessage</name>
+                        <args>
+                           <arg type="ILjava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">org.jpeek.patterns.example2.Logger.ERRORINFO</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.logMessage</name>
+                        <args>
+                           <arg type="ILjava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">org.jpeek.patterns.example2.Logger.DEBUGINFO</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.Logger.logMessage</name>
+                        <args>
+                           <arg type="ILjava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

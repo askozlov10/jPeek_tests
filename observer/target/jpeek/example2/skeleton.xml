@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T14:51:03.700999600Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\observer\out\production\observer\org\jpeek\patterns\example2">
+      <package id="org.jpeek.patterns.example2">
+         <class id="ResponseHandler1"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.ResponseHandler1; file: org.jpeek.patterns.example2.ResponseHandler1-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">resp</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/util/Observable;Ljava/lang/Object;)V"
+                       name="update"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/util/Observable">?</arg>
+                     <arg type="Ljava/lang/Object">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">resp</op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">resp</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="ResponseHandler2"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.ResponseHandler2; file: org.jpeek.patterns.example2.ResponseHandler2-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">resp</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/util/Observable;Ljava/lang/Object;)V"
+                       name="update"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/util/Observable">?</arg>
+                     <arg type="Ljava/lang/Object">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">resp</op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">resp</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="EventSource"><!--Package: org.jpeek.patterns.example2; name: org.jpeek.patterns.example2.EventSource; file: org.jpeek.patterns.example2.EventSource-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.util.Observable.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="run"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.in</op>
+                     <op code="call">
+                        <name>java.io.InputStreamReader.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/InputStream">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.BufferedReader.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/Reader">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.BufferedReader.readLine</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.EventSource.setChanged</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example2.EventSource.notifyObservers</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.IOException.printStackTrace</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

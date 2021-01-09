@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T02:27:15.504547400Z"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="org.jpeek.patterns.example2.CloseFileCommand"
+             rank="0.7143"
+             short_id="o.j.p.e.CloseFileCommand"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.Example2Demo"
+             rank="0.7714"
+             short_id="o.j.p.e.Example2Demo"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.FileInvoker"
+             rank="0.7143"
+             short_id="o.j.p.e.FileInvoker"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.FileSystemReceiverUtil"
+             rank="0.7714"
+             short_id="o.j.p.e.FileSystemReceiverUtil"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.OpenFileCommand"
+             rank="0.7143"
+             short_id="o.j.p.e.OpenFileCommand"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.UnixFileSystemReceiver"
+             rank="0.6571"
+             short_id="o.j.p.e.UnixFileSystemReceiver"
+             trust="0.5">
+         <metric color="red" name="CCM" rank="1"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.WindowsFileSystemReceiver"
+             rank="0.6571"
+             short_id="o.j.p.e.WindowsFileSystemReceiver"
+             trust="0.5">
+         <metric color="red" name="CCM" rank="1"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example2.WriteFileCommand"
+             rank="0.7143"
+             short_id="o.j.p.e.WriteFileCommand"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+   </classes>
+</matrix>

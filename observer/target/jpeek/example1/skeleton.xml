@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T14:50:33.402795300Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\observer\out\production\observer\org\jpeek\patterns\example1">
+      <package id="org.jpeek.patterns.example1">
+         <class id="Example1Demo"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Example1Demo; file: org.jpeek.patterns.example1.Example1Demo-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Editor.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">events</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.LogOpenListener.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.EventManager.subscribe</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                           <arg type="Lorg/jpeek/patterns/example1/EventListener">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">events</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.EmailNotificationListener.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.EventManager.subscribe</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                           <arg type="Lorg/jpeek/patterns/example1/EventListener">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Editor.openFile</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.Editor.saveFile</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Exception.printStackTrace</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Editor"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.Editor; file: org.jpeek.patterns.example1.Editor-->
+            <attributes>
+               <attribute final="false"
+                          public="true"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example1/EventManager">events</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/io/File">file</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.EventManager.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">events</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="openFile"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.io.File.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">file</op>
+                     <op code="get">events</op>
+                     <op code="get">file</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.EventManager.notify</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                           <arg type="Ljava/io/File">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="saveFile"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">file</op>
+                     <op code="get">events</op>
+                     <op code="get">file</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.EventManager.notify</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                           <arg type="Ljava/io/File">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Exception.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="EmailNotificationListener"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.EmailNotificationListener; file: org.jpeek.patterns.example1.EmailNotificationListener-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">email</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">email</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;Ljava/io/File;)V"
+                       name="update"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Ljava/io/File">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">email</op>
+                     <op code="call">
+                        <name>java.io.File.getName</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="EventManager"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.EventManager; file: org.jpeek.patterns.example1.EventManager-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/Map">listeners</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="([Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.HashMap.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">listeners</op>
+                     <op code="get">listeners</op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Map.put</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;Lorg/jpeek/patterns/example1/EventListener;)V"
+                       name="subscribe"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Lorg/jpeek/patterns/example1/EventListener">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">listeners</op>
+                     <op code="call">
+                        <name>java.util.Map.get</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.List.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;Lorg/jpeek/patterns/example1/EventListener;)V"
+                       name="unsubscribe"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Lorg/jpeek/patterns/example1/EventListener">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">listeners</op>
+                     <op code="call">
+                        <name>java.util.Map.get</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.List.remove</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;Ljava/io/File;)V"
+                       name="notify"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Ljava/io/File">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">listeners</op>
+                     <op code="call">
+                        <name>java.util.Map.get</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.List.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example1.EventListener.update</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                           <arg type="Ljava/io/File">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="LogOpenListener"><!--Package: org.jpeek.patterns.example1; name: org.jpeek.patterns.example1.LogOpenListener; file: org.jpeek.patterns.example1.LogOpenListener-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/io/File">log</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.File.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">log</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;Ljava/io/File;)V"
+                       name="update"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Ljava/io/File">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">log</op>
+                     <op code="call">
+                        <name>java.io.File.getName</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

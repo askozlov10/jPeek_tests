@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T01:52:29.960966200Z"
+        schema="xsd/skeleton.xsd"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>LCOM3</title>
+   <description>LCOM3, like LCOM2, is an attempt to address some shortcomings
+          of the original LCOM:
+          - LCOM gives a value of zero for very different classes
+          - Its definition is based on method-data interaction, which may not
+            be a correct way to define cohesiveness in the object-oriented world
+          - Very different classes may have an equal value
+          - As LCOM is defined on variable access, it's not well suited for
+            classes that internally access their data via properties
+          LCOM3 values are in the range [0, 2], where 0 = "high cohesion",
+          1 = "no cohesion" (class should be split), and values &gt;= 1 suggest
+          serious design flaws in the class, such as unused ("dead") attributes
+          or perhaps the attributes are accessed only from outside the class.
+          If there are no more than one method in a class, LCOM3 is undefined.
+          If there are no variables in a class, LCOM3 is undefined. An
+          undefined LCOM3 is displayed as zero.</description>
+   <app element="false"
+        id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\mediator\out\production\mediator\org\jpeek\patterns\example5">
+      <package element="false" id="org.jpeek.patterns.example5">
+         <class color="yellow" element="true" id="Title" value="0.5">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">1</var>
+            </vars>
+         </class>
+         <class color="yellow" element="true" id="SaveButton" value="0.5">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">1</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="Note" value="0.625">
+            <vars>
+               <var id="methods">5</var>
+               <var id="attributes">2</var>
+            </vars>
+         </class>
+         <class color="yellow" element="true" id="AddButton" value="0.5">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">1</var>
+            </vars>
+         </class>
+         <class color="yellow" element="true" id="DeleteButton" value="0.5">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">1</var>
+            </vars>
+         </class>
+         <class color="yellow" element="true" id="TextBox" value="0.5">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="List$Hide" value="0">
+            <vars>
+               <var id="methods">1</var>
+               <var id="attributes">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Example5Demo" value="0">
+            <vars>
+               <var id="methods">0</var>
+               <var id="attributes">0</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="List" value="0.625">
+            <vars>
+               <var id="methods">5</var>
+               <var id="attributes">2</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Filter" value="1">
+            <vars>
+               <var id="methods">4</var>
+               <var id="attributes">2</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="Editor" value="0.73">
+            <vars>
+               <var id="methods">11</var>
+               <var id="attributes">10</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
+   <min>0.5</min>
+   <max>0.73</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 11, steps: 32; all: 8; min: 0.5; max: 0.73; delta: 0.0071875006-->
+      <bar color="yellow" x="0">5</bar>
+      <!--step: 0, left: 0.5, right: 0.5071875-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 0.5071875, right: 0.514375-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 0.514375, right: 0.5215625-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 0.5215625, right: 0.52875-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0.52875, right: 0.5359375-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 0.5359375, right: 0.54312503-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0.54312503, right: 0.5503125-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 0.5503125, right: 0.5575-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0.5575, right: 0.5646875-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 0.5646875, right: 0.571875-->
+      <bar color="yellow" x="0.3125">0</bar>
+      <!--step: 10, left: 0.571875, right: 0.5790625-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0.5790625, right: 0.58625-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0.58625, right: 0.5934375-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 0.5934375, right: 0.60062504-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.60062504, right: 0.6078125-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 0.6078125, right: 0.615-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.615, right: 0.6221875-->
+      <bar color="green" x="0.53125">2</bar>
+      <!--step: 17, left: 0.6221875, right: 0.629375-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 0.629375, right: 0.6365625-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.6365625, right: 0.64375-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0.64375, right: 0.6509375-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.6509375, right: 0.65812504-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0.65812504, right: 0.6653125-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0.6653125, right: 0.6725-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.6725, right: 0.6796875-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0.6796875, right: 0.686875-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.686875, right: 0.69406253-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.69406253, right: 0.70125-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.70125, right: 0.7084375-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0.7084375, right: 0.71562505-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0.71562505, right: 0.72281253-->
+      <bar color="green" x="0.96875">1</bar>
+      <!--step: 31, left: 0.72281253, right: 0.73-->
+   </bars>
+   <statistics>
+      <total>11</total>
+      <elements>8</elements>
+      <mean>0.56</mean>
+      <sigma>0.08317902379807061</sigma>
+      <variance>0.006918749999999999</variance>
+      <defects>0.125</defects>
+   </statistics>
+</metric>

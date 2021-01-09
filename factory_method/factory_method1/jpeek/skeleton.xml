@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T16:35:31.939542600Z"
+          schema="xsd/skeleton.xsd"
+          version="1.0-SNAPSHOT">
+   <app id="D:\jpeek_patterns\factory_method\factory_method1">
+      <package id="main">
+         <class id="HtmlDialog"><!--Package: main; name: main.HtmlDialog; file: main.HtmlDialog-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>main.Dialog.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/Button;"
+                       name="createButton"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/Button</return>
+                  <ops>
+                     <op code="call">
+                        <name>main.HtmlButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="WindowsDialog"><!--Package: main; name: main.WindowsDialog; file: main.WindowsDialog-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>main.Dialog.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/Button;"
+                       name="createButton"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/Button</return>
+                  <ops>
+                     <op code="call">
+                        <name>main.WindowsButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Dialog"><!--Package: main; name: main.Dialog; file: main.Dialog-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="renderWindow"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>main.Dialog.createButton</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Button.render</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="true"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lmain/Button;"
+                       name="createButton"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lmain/Button</return>
+               </method>
+            </methods>
+         </class>
+         <class id="HtmlButton"><!--Package: main; name: main.HtmlButton; file: main.HtmlButton-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="render"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.HtmlButton.onClick</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="onClick"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Main"><!--Package: main; name: main.Main; file: main.Main-->
+            <attributes>
+               <attribute final="false" public="false" static="true" type="Lmain/Dialog">dialog</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>main.Main.configure</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.Main.runBusinessLogic</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="configure"
+                       static="true"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.System.getProperty</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.WindowsDialog.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put_static">main.Main.dialog</op>
+                     <op code="call">
+                        <name>main.HtmlDialog.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put_static">main.Main.dialog</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="runBusinessLogic"
+                       static="true"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">main.Main.dialog</op>
+                     <op code="call">
+                        <name>main.Dialog.renderWindow</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="WindowsButton"><!--Package: main; name: main.WindowsButton; file: main.WindowsButton-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/JPanel">panel</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/JFrame">frame</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/JButton">button</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">panel</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">frame</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="render"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setDefaultCloseOperation</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setOpaque</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Color.&lt;init&gt;</name>
+                        <args>
+                           <arg type="III">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setBackground</name>
+                        <args>
+                           <arg type="Ljava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Font.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setFont</name>
+                        <args>
+                           <arg type="Ljava/awt/Font">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setHorizontalAlignment</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">panel</op>
+                     <op code="call">
+                        <name>java.awt.FlowLayout.&lt;init&gt;</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setLayout</name>
+                        <args>
+                           <arg type="Ljava/awt/LayoutManager">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.getContentPane</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">panel</op>
+                     <op code="call">
+                        <name>java.awt.Container.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">panel</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.WindowsButton.onClick</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">panel</op>
+                     <op code="get">button</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setSize</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">frame</op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>main.WindowsButton.onClick</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="onClick"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">button</op>
+                     <op code="get">button</op>
+                     <op code="call">
+                        <name>main.WindowsButton$1.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lmain/WindowsButton">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JButton.addActionListener</name>
+                        <args>
+                           <arg type="Ljava/awt/event/ActionListener">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

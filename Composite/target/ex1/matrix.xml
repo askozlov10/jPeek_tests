@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-09T06:52:29.715Z"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="ex1.BaseShape"
+             rank="0.3600"
+             short_id="e.BaseShape"
+             trust="0.5">
+         <metric color="red" name="CAMC" rank="1"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="SCOM" rank="1"/>
+      </class>
+      <class id="ex1.Circle" rank="0.2800" short_id="e.Circle" trust="0.5">
+         <metric color="red" name="CAMC" rank="1"/>
+         <metric color="yellow" name="LCOM5" rank="3"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="red" name="SCOM" rank="1"/>
+      </class>
+      <class id="ex1.CompoundShape"
+             rank="0.6800"
+             short_id="e.CompoundShape"
+             trust="0.5">
+         <metric color="red" name="CAMC" rank="1"/>
+         <metric color="green" name="LCOM5" rank="5"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex1.Dot" rank="0.2000" short_id="e.Dot" trust="1">
+         <metric color="red" name="CAMC" rank="1"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="red" name="SCOM" rank="1"/>
+      </class>
+      <class id="ex1.ImageEditor"
+             rank="0.8400"
+             short_id="e.ImageEditor"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex1.ImageEditor$EditorCanvas"
+             rank="0.2800"
+             short_id="e.I..$EditorCanvas"
+             trust="0.5">
+         <metric color="red" name="CAMC" rank="1"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="yellow" name="NHD" rank="3"/>
+         <metric color="red" name="SCOM" rank="1"/>
+      </class>
+      <class id="ex1.Main" rank="0.8400" short_id="e.Main" trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex1.Rectangle"
+             rank="0.2000"
+             short_id="e.Rectangle"
+             trust="1">
+         <metric color="red" name="CAMC" rank="1"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="red" name="SCOM" rank="1"/>
+      </class>
+   </classes>
+</matrix>

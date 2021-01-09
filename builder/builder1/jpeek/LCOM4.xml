@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T16:59:30.477401Z"
+        schema="xsd/skeleton.xsd"
+        version="1.0-SNAPSHOT"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>LCOM4</title>
+   <description>'LCOM4' is a 1995 revision by Martin Hitz and Behzad Montazeri,
+          that further improves upon the revised versions LCOM3 proposed by
+          W. Li and S. Henry in "Maintenance Metrics for the Object Oriented Paradigm".
+          LCOM4 establishes connections between methods not just on shared attributes
+          of the class, but also on whether one method calls the other. That is,
+          methods A and B are said to be related if either both use at least one
+          instance variable in common, OR A calls B, OR B calls A.
+          LCOM4 tweaks the formula for method connections in order to eliminate
+          the distorting effects that 'getters' may have on earlier LCOM variants,
+          and also methods that purely rely on the reuse of other methods without
+          accessing attributes directly (think method overloads where the ones
+          with the least args reuse the ones with the most args).
+        </description>
+   <app element="false" id="D:\jpeek_patterns\builder\builder1">
+      <package element="false" id="main">
+         <class color="green" element="false" id="GPSNavigator" value="0">
+            <vars>
+               <var id="methods">1</var>
+               <var id="attributes">1</var>
+               <var id="pairs">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Manual" value="0">
+            <vars>
+               <var id="methods">1</var>
+               <var id="attributes">6</var>
+               <var id="pairs">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="0">
+            <vars>
+               <var id="methods">0</var>
+               <var id="attributes">0</var>
+               <var id="pairs">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="CarManualBuilder" value="1">
+            <vars>
+               <var id="methods">7</var>
+               <var id="attributes">6</var>
+               <var id="pairs">6</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Engine" value="0.7333">
+            <vars>
+               <var id="methods">6</var>
+               <var id="attributes">3</var>
+               <var id="pairs">7</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="TripComputer" value="0">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">1</var>
+               <var id="pairs">3</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Car" value="1.1224">
+            <vars>
+               <var id="methods">8</var>
+               <var id="attributes">7</var>
+               <var id="pairs">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="CarBuilder" value="1">
+            <vars>
+               <var id="methods">7</var>
+               <var id="attributes">6</var>
+               <var id="pairs">6</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Director" value="0">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">0</var>
+               <var id="pairs">0</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.4" low="0.6">[0.6000 .. 0.4000]</colors>
+   <min>0.7333</min>
+   <max>1</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 9, steps: 32; all: 3; min: 0.7333; max: 1; delta: 0.008334376-->
+      <bar color="red" x="0">1</bar>
+      <!--step: 0, left: 0.7333, right: 0.74163437-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 0.74163437, right: 0.7499687-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 0.7499687, right: 0.7583031-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 0.7583031, right: 0.76663744-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0.76663744, right: 0.77497184-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 0.77497184, right: 0.78330624-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0.78330624, right: 0.7916406-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 0.7916406, right: 0.799975-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0.799975, right: 0.8083094-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 0.8083094, right: 0.8166437-->
+      <bar color="yellow" x="0.3125">0</bar>
+      <!--step: 10, left: 0.8166437, right: 0.8249781-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0.8249781, right: 0.8333125-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0.8333125, right: 0.84164685-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 0.84164685, right: 0.84998125-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.84998125, right: 0.8583156-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 0.8583156, right: 0.86665-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.86665, right: 0.8749844-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 0.8749844, right: 0.8833187-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 0.8833187, right: 0.8916531-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.8916531, right: 0.89998746-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0.89998746, right: 0.90832186-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.90832186, right: 0.91665626-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0.91665626, right: 0.92499065-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0.92499065, right: 0.933325-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.933325, right: 0.94165933-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0.94165933, right: 0.9499937-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.9499937, right: 0.9583281-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.9583281, right: 0.9666625-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.9666625, right: 0.97499686-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0.97499686, right: 0.98333126-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0.98333126, right: 0.9916656-->
+      <bar color="red" x="0.96875">2</bar>
+      <!--step: 31, left: 0.9916656, right: 1-->
+   </bars>
+   <statistics>
+      <total>9</total>
+      <elements>3</elements>
+      <mean>0.9110999999999999</mean>
+      <sigma>0.12572358569496817</sigma>
+      <variance>0.015806420000000005</variance>
+      <defects>0.3333333333333333</defects>
+   </statistics>
+</metric>

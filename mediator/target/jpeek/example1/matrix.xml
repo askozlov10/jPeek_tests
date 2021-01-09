@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T01:49:42.786031500Z"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="org.jpeek.patterns.example1.ChatRoomImpl"
+             rank="0.7143"
+             short_id="o.j.p.e.ChatRoomImpl"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example1.Example1Demo"
+             rank="0.7714"
+             short_id="o.j.p.e.Example1Demo"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example1.Participant"
+             rank="0.6000"
+             short_id="o.j.p.e.Participant"
+             trust="0.5">
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
+      </class>
+      <class id="org.jpeek.patterns.example1.User1"
+             rank="0.4571"
+             short_id="o.j.p.e.User1"
+             trust="0.33333333333333337">
+         <metric color="red" name="CCM" rank="1"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="yellow" name="LCOM2" rank="3"/>
+         <metric color="green" name="LCOM3" rank="5"/>
+         <metric color="red" name="LCOM4" rank="1"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="yellow" name="OCC" rank="3"/>
+         <metric color="yellow" name="PCC" rank="3"/>
+         <metric color="red" name="SCOM" rank="1"/>
+         <metric color="red" name="TCC" rank="1"/>
+      </class>
+      <class id="org.jpeek.patterns.example1.User2"
+             rank="0.4571"
+             short_id="o.j.p.e.User2"
+             trust="0.33333333333333337">
+         <metric color="red" name="CCM" rank="1"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="yellow" name="LCOM2" rank="3"/>
+         <metric color="green" name="LCOM3" rank="5"/>
+         <metric color="red" name="LCOM4" rank="1"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="green" name="MWE" rank="5"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="yellow" name="OCC" rank="3"/>
+         <metric color="yellow" name="PCC" rank="3"/>
+         <metric color="red" name="SCOM" rank="1"/>
+         <metric color="red" name="TCC" rank="1"/>
+      </class>
+   </classes>
+</matrix>

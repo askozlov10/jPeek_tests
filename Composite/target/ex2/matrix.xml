@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-09T06:54:19.486Z"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="ex2.FinancialDepartment"
+             rank="0.8400"
+             short_id="e.FinancialDepartment"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex2.HeadDepartment"
+             rank="0.4400"
+             short_id="e.HeadDepartment"
+             trust="0.33333333333333337">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="yellow" name="SCOM" rank="3"/>
+      </class>
+      <class id="ex2.Main" rank="0.8400" short_id="e.Main" trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex2.SalesDepartment"
+             rank="0.8400"
+             short_id="e.SalesDepartment"
+             trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+   </classes>
+</matrix>

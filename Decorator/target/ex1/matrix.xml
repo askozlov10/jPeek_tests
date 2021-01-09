@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-09T08:44:28.069Z"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
+   <classes>
+      <class id="ex1.CompressionDecorator"
+             rank="0.2800"
+             short_id="e.CompressionDecorator"
+             trust="0.5">
+         <metric color="red" name="CAMC" rank="1"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="yellow" name="NHD" rank="3"/>
+         <metric color="red" name="SCOM" rank="1"/>
+      </class>
+      <class id="ex1.DataSourceDecorator"
+             rank="0.6000"
+             short_id="e.DataSourceDecorator"
+             trust="0.33333333333333337">
+         <metric color="yellow" name="CAMC" rank="3"/>
+         <metric color="green" name="LCOM5" rank="5"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex1.EncryptionDecorator"
+             rank="0.4400"
+             short_id="e.EncryptionDecorator"
+             trust="0.33333333333333337">
+         <metric color="yellow" name="CAMC" rank="3"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+      <class id="ex1.FileDataSource"
+             rank="0.4400"
+             short_id="e.FileDataSource"
+             trust="0.33333333333333337">
+         <metric color="yellow" name="CAMC" rank="3"/>
+         <metric color="green" name="LCOM5" rank="5"/>
+         <metric color="red" name="MMAC" rank="1"/>
+         <metric color="red" name="NHD" rank="1"/>
+         <metric color="red" name="SCOM" rank="1"/>
+      </class>
+      <class id="ex1.Main" rank="0.8400" short_id="e.Main" trust="0.5">
+         <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="LCOM5" rank="1"/>
+         <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="SCOM" rank="5"/>
+      </class>
+   </classes>
+</matrix>

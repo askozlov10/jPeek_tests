@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T01:52:09.260879400Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\mediator\out\production\mediator\org\jpeek\patterns\example4">
+      <package id="org.jpeek.patterns.example4">
+         <class id="PowerSupplier"><!--Package: org.jpeek.patterns.example4; name: org.jpeek.patterns.example4.PowerSupplier; file: org.jpeek.patterns.example4.PowerSupplier-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="turnOn"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="turnOff"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+               </method>
+            </methods>
+         </class>
+         <class id="Button"><!--Package: org.jpeek.patterns.example4; name: org.jpeek.patterns.example4.Button; file: org.jpeek.patterns.example4.Button-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example4/Mediator">mediator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="press"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example4.Mediator.press</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Fan"><!--Package: org.jpeek.patterns.example4; name: org.jpeek.patterns.example4.Fan; file: org.jpeek.patterns.example4.Fan-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example4/Mediator">mediator</attribute>
+               <attribute final="false" public="false" static="false" type="Z">isOn</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">isOn</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="turnOn"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example4.Mediator.start</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">isOn</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="turnOff"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">isOn</op>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example4.Mediator.stop</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Z"
+                       name="isOn"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Z</return>
+                  <ops>
+                     <op code="get">isOn</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Mediator"><!--Package: org.jpeek.patterns.example4; name: org.jpeek.patterns.example4.Mediator; file: org.jpeek.patterns.example4.Mediator-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example4/Button">button</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example4/Fan">fan</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example4/PowerSupplier">powerSupplier</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="press"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">fan</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example4.Fan.isOn</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">fan</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example4.Fan.turnOff</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">fan</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example4.Fan.turnOn</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="start"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">powerSupplier</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example4.PowerSupplier.turnOn</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="stop"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">powerSupplier</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example4.PowerSupplier.turnOff</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>

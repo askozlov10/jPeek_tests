@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2020-12-26T16:59:30.477401Z"
+        schema="xsd/skeleton.xsd"
+        version="1.0-SNAPSHOT"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>LCOM</title>
+   <description>LCOM is calculated as the number of pairs of methods
+          operating on disjoint sets of instance variables,
+          reduced by the number of method pairs acting on at
+          least one shared instance variable.
+          Say, there are 5 methods in a class. This means that there are 10
+          pairs of methods (`5 * 4 / 2`). Now, we need to see how many of these
+          pairs are using at least one and the same attribute (Nonempty) and how many
+          of them are not using any similar attributes (Empty). Then, we
+          just do `LCOM = Empty - Nonempty`. The metric can be really big,
+          starting from zero and up to any possible number. The bigger the
+          value the least cohesive is the class. A perfect design would have
+          `LCOM=0`.</description>
+   <app element="false" id="D:\jpeek_patterns\builder\builder1">
+      <package element="false" id="main">
+         <class color="green" element="false" id="GPSNavigator" value="0">
+            <vars>
+               <var id="methods">1</var>
+               <var id="pairs">0</var>
+               <var id="empty">0</var>
+               <var id="nonempty">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Manual" value="0">
+            <vars>
+               <var id="methods">1</var>
+               <var id="pairs">0</var>
+               <var id="empty">0</var>
+               <var id="nonempty">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="0">
+            <vars>
+               <var id="methods">0</var>
+               <var id="pairs">0</var>
+               <var id="empty">0</var>
+               <var id="nonempty">0</var>
+            </vars>
+         </class>
+         <class color="yellow" element="true" id="CarManualBuilder" value="9">
+            <vars>
+               <var id="methods">7</var>
+               <var id="pairs">21</var>
+               <var id="empty">15</var>
+               <var id="nonempty">6</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="Engine" value="1">
+            <vars>
+               <var id="methods">6</var>
+               <var id="pairs">15</var>
+               <var id="empty">8</var>
+               <var id="nonempty">7</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="TripComputer" value="0">
+            <vars>
+               <var id="methods">3</var>
+               <var id="pairs">3</var>
+               <var id="empty">0</var>
+               <var id="nonempty">3</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Car" value="26">
+            <vars>
+               <var id="methods">8</var>
+               <var id="pairs">28</var>
+               <var id="empty">27</var>
+               <var id="nonempty">1</var>
+            </vars>
+         </class>
+         <class color="yellow" element="true" id="CarBuilder" value="9">
+            <vars>
+               <var id="methods">7</var>
+               <var id="pairs">21</var>
+               <var id="empty">15</var>
+               <var id="nonempty">6</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="Director" value="3">
+            <vars>
+               <var id="methods">3</var>
+               <var id="pairs">3</var>
+               <var id="empty">3</var>
+               <var id="nonempty">0</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="5" low="15">[15.0000 .. 5.0000]</colors>
+   <min>1</min>
+   <max>9</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 9, steps: 32; all: 4; min: 1; max: 9; delta: 0.25-->
+      <bar color="green" x="0">1</bar>
+      <!--step: 0, left: 1, right: 1.25-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 1.25, right: 1.5-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 1.5, right: 1.75-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 1.75, right: 2-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 2, right: 2.25-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 2.25, right: 2.5-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 2.5, right: 2.75-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 2.75, right: 3-->
+      <bar color="green" x="0.25">1</bar>
+      <!--step: 8, left: 3, right: 3.25-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 3.25, right: 3.5-->
+      <bar color="yellow" x="0.3125">0</bar>
+      <!--step: 10, left: 3.5, right: 3.75-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 3.75, right: 4-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 4, right: 4.25-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 4.25, right: 4.5-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 4.5, right: 4.75-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 4.75, right: 5-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 5, right: 5.25-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 5.25, right: 5.5-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 5.5, right: 5.75-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 5.75, right: 6-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 6, right: 6.25-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 6.25, right: 6.5-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 6.5, right: 6.75-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 6.75, right: 7-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 7, right: 7.25-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 7.25, right: 7.5-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 7.5, right: 7.75-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 7.75, right: 8-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 8, right: 8.25-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 8.25, right: 8.5-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 8.5, right: 8.75-->
+      <bar color="yellow" x="0.96875">2</bar>
+      <!--step: 31, left: 8.75, right: 9-->
+   </bars>
+   <statistics>
+      <total>9</total>
+      <elements>5</elements>
+      <mean>9.6</mean>
+      <sigma>8.8</sigma>
+      <variance>77.44</variance>
+      <defects>0.2</defects>
+   </statistics>
+</metric>

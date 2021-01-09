@@ -1,0 +1,2037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skeleton date="2020-12-26T01:52:29.960966200Z"
+          schema="xsd/skeleton.xsd"
+          version="${project.version}">
+   <app id="D:\HSE\BUSINESS RF\JPEEK DOCS\java patterns\mediator\out\production\mediator\org\jpeek\patterns\example5">
+      <package id="org.jpeek.patterns.example5">
+         <class id="Title"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.Title; file: org.jpeek.patterns.example5.Title-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Mediator">mediator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JTextField.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Mediator;)V"
+                       name="setMediator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Mediator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">mediator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/event/KeyEvent;)V"
+                       name="processComponentKeyEvent"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/awt/event/KeyEvent">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.markNote</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+               </method>
+            </methods>
+         </class>
+         <class id="SaveButton"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.SaveButton; file: org.jpeek.patterns.example5.SaveButton-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Mediator">mediator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Mediator;)V"
+                       name="setMediator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Mediator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">mediator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/event/ActionEvent;)V"
+                       name="fireActionPerformed"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/awt/event/ActionEvent">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.saveChanges</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+               </method>
+            </methods>
+         </class>
+         <class id="Note"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.Note; file: org.jpeek.patterns.example5.Note-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">name</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">text</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">name</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="setName"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">name</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="setText"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">text</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">name</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getText"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">text</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="toString"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">name</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="AddButton"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.AddButton; file: org.jpeek.patterns.example5.AddButton-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Mediator">mediator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Mediator;)V"
+                       name="setMediator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Mediator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">mediator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/event/ActionEvent;)V"
+                       name="fireActionPerformed"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/awt/event/ActionEvent">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.addNewNote</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Note">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+               </method>
+            </methods>
+         </class>
+         <class id="DeleteButton"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.DeleteButton; file: org.jpeek.patterns.example5.DeleteButton-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Mediator">mediator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Mediator;)V"
+                       name="setMediator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Mediator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">mediator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/event/ActionEvent;)V"
+                       name="fireActionPerformed"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/awt/event/ActionEvent">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.deleteNote</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+               </method>
+            </methods>
+         </class>
+         <class id="TextBox"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.TextBox; file: org.jpeek.patterns.example5.TextBox-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Mediator">mediator</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JTextArea.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Mediator;)V"
+                       name="setMediator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Mediator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">mediator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/event/KeyEvent;)V"
+                       name="processComponentKeyEvent"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/awt/event/KeyEvent">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.markNote</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+               </method>
+            </methods>
+         </class>
+         <class id="List$Hide"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.List$Hide; file: org.jpeek.patterns.example5.List$Hide-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/List">list</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/List">this$0</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lorg/jpeek/patterns/example5/List;Lorg/jpeek/patterns/example5/List;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/List">?</arg>
+                     <arg type="Lorg/jpeek/patterns/example5/List">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">this$0</op>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">list</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="run"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Thread.sleep</name>
+                        <args>
+                           <arg type="J">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.InterruptedException.printStackTrace</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.isSelectionEmpty</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">this$0</op>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.hideElements</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">this$0</op>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.hideElements</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Example5Demo"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.Example5Demo; file: org.jpeek.patterns.example5.Example5Demo-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="([Ljava/lang/String;)V"
+                       name="main"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Editor.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Title.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.registerComponent</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.TextBox.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.registerComponent</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.AddButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.registerComponent</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.DeleteButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.registerComponent</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.SaveButton.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.registerComponent</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.DefaultListModel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljavax/swing/DefaultListModel">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.registerComponent</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Filter.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.registerComponent</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.createGUI</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="List"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.List; file: org.jpeek.patterns.example5.List-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Mediator">mediator</attribute>
+               <attribute final="true"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/DefaultListModel">LIST_MODEL</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljavax/swing/DefaultListModel;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljavax/swing/DefaultListModel">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljavax/swing/ListModel">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">LIST_MODEL</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.setModel</name>
+                        <args>
+                           <arg type="Ljavax/swing/ListModel">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.setLayoutOrientation</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List$Hide.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/List">?</arg>
+                           <arg type="Lorg/jpeek/patterns/example5/List">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Thread.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/Runnable">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Thread.start</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Mediator;)V"
+                       name="setMediator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Mediator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">mediator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Note;)V"
+                       name="addElement"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Note">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">LIST_MODEL</op>
+                     <op code="call">
+                        <name>javax.swing.DefaultListModel.addElement</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">LIST_MODEL</op>
+                     <op code="call">
+                        <name>javax.swing.DefaultListModel.size</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.setSelectedIndex</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.ensureIndexIsVisible</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">mediator</op>
+                     <op code="get">LIST_MODEL</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.sendToFilter</name>
+                        <args>
+                           <arg type="Ljavax/swing/ListModel">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="deleteElement"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.getSelectedIndex</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">LIST_MODEL</op>
+                     <op code="call">
+                        <name>javax.swing.DefaultListModel.remove</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">mediator</op>
+                     <op code="get">LIST_MODEL</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.sendToFilter</name>
+                        <args>
+                           <arg type="Ljavax/swing/ListModel">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Lorg/jpeek/patterns/example5/Note;"
+                       name="getCurrentElement"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Lorg/jpeek/patterns/example5/Note</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.getSelectedValue</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+               </method>
+            </methods>
+         </class>
+         <class id="Filter"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.Filter; file: org.jpeek.patterns.example5.Filter-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Mediator">mediator</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/ListModel">listModel</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JTextField.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Mediator;)V"
+                       name="setMediator"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Mediator">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">mediator</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/awt/event/KeyEvent;)V"
+                       name="processComponentKeyEvent"
+                       static="false"
+                       visibility="protected">
+                  <args>
+                     <arg type="Ljava/awt/event/KeyEvent">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Filter.getText</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Filter.searchElements</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljavax/swing/ListModel;)V"
+                       name="setList"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljavax/swing/ListModel">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">listModel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="searchElements"
+                       static="false"
+                       visibility="private">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">listModel</op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">mediator</op>
+                     <op code="get">listModel</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.setElementsList</name>
+                        <args>
+                           <arg type="Ljavax/swing/ListModel">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">listModel</op>
+                     <op code="call">
+                        <name>javax.swing.ListModel.getSize</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">listModel</op>
+                     <op code="call">
+                        <name>javax.swing.ListModel.getElementAt</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.ArrayList.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.DefaultListModel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.ArrayList.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.getName</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.contains</name>
+                        <args>
+                           <arg type="Ljava/lang/CharSequence">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.DefaultListModel.addElement</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">mediator</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Mediator.setElementsList</name>
+                        <args>
+                           <arg type="Ljavax/swing/ListModel">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+               </method>
+            </methods>
+         </class>
+         <class id="Editor"><!--Package: org.jpeek.patterns.example5; name: org.jpeek.patterns.example5.Editor; file: org.jpeek.patterns.example5.Editor-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Title">title</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/TextBox">textBox</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/AddButton">add</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/DeleteButton">del</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/SaveButton">save</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/List">list</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lorg/jpeek/patterns/example5/Filter">filter</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/JLabel">titleLabel</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/JLabel">textLabel</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljavax/swing/JLabel">label</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">titleLabel</op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">textLabel</op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">label</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Component;)V"
+                       name="registerComponent"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Component">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Component.setMediator</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Mediator">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Component.getName</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.hashCode</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.equals</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">add</op>
+                     <op code="put">del</op>
+                     <op code="put">filter</op>
+                     <op code="put">list</op>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.addListSelectionListener</name>
+                        <args>
+                           <arg type="Ljavax/swing/event/ListSelectionListener">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">save</op>
+                     <op code="put">textBox</op>
+                     <op code="put">title</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Note;)V"
+                       name="addNewNote"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Note">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">title</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Title.setText</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textBox</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.TextBox.setText</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.addElement</name>
+                        <args>
+                           <arg type="Lorg/jpeek/patterns/example5/Note">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="deleteNote"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.deleteElement</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lorg/jpeek/patterns/example5/Note;)V"
+                       name="getInfoFromList"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lorg/jpeek/patterns/example5/Note">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">title</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.getName</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.replace</name>
+                        <args>
+                           <arg type="CC">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Title.setText</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textBox</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.getText</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.TextBox.setText</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="saveChanges"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.getSelectedValue</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">title</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Title.getText</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.setName</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textBox</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.TextBox.getText</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.setText</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.repaint</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="markNote"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.getCurrentElement</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.getName</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.endsWith</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.getName</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Note.setName</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.repaint</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="clear"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">title</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Title.setText</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textBox</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.TextBox.setText</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljavax/swing/ListModel;)V"
+                       name="sendToFilter"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljavax/swing/ListModel">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">filter</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Filter.setList</name>
+                        <args>
+                           <arg type="Ljavax/swing/ListModel">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljavax/swing/ListModel;)V"
+                       name="setElementsList"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljavax/swing/ListModel">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.setModel</name>
+                        <args>
+                           <arg type="Ljavax/swing/ListModel">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.repaint</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Z)V"
+                       name="hideElements"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Z">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">titleLabel</op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textLabel</op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">title</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Title.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textBox</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.TextBox.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">save</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.SaveButton.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">label</op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="createGUI"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>javax.swing.JFrame.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setSize</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setDefaultCloseOperation</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.BLACK</op>
+                     <op code="call">
+                        <name>javax.swing.border.LineBorder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setBorder</name>
+                        <args>
+                           <arg type="Ljavax/swing/border/Border">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setSize</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.BoxLayout.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/awt/Container">?</arg>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setLayout</name>
+                        <args>
+                           <arg type="Ljava/awt/LayoutManager">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">filter</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Filter.setColumns</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">filter</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Dimension.&lt;init&gt;</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setPreferredSize</name>
+                        <args>
+                           <arg type="Ljava/awt/Dimension">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.List.setFixedCellWidth</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setSize</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">list</op>
+                     <op code="call">
+                        <name>javax.swing.JScrollPane.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Dimension.&lt;init&gt;</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JScrollPane.setPreferredSize</name>
+                        <args>
+                           <arg type="Ljava/awt/Dimension">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">add</op>
+                     <op code="call">
+                        <name>java.awt.Dimension.&lt;init&gt;</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.AddButton.setPreferredSize</name>
+                        <args>
+                           <arg type="Ljava/awt/Dimension">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">add</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">del</op>
+                     <op code="call">
+                        <name>java.awt.Dimension.&lt;init&gt;</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.DeleteButton.setPreferredSize</name>
+                        <args>
+                           <arg type="Ljava/awt/Dimension">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">del</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.FlowLayout.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setLayout</name>
+                        <args>
+                           <arg type="Ljava/awt/LayoutManager">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setLayout</name>
+                        <args>
+                           <arg type="Ljava/awt/LayoutManager">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setSize</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setLocation</name>
+                        <args>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.awt.Color.BLACK</op>
+                     <op code="call">
+                        <name>javax.swing.border.LineBorder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.setBorder</name>
+                        <args>
+                           <arg type="Ljavax/swing/border/Border">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">titleLabel</op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setBounds</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">title</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.Title.setBounds</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textLabel</op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setBounds</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textBox</op>
+                     <op code="get_static">java.awt.Color.DARK_GRAY</op>
+                     <op code="call">
+                        <name>javax.swing.border.LineBorder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/awt/Color">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.TextBox.setBorder</name>
+                        <args>
+                           <arg type="Ljavax/swing/border/Border">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textBox</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.TextBox.setBounds</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">save</op>
+                     <op code="call">
+                        <name>org.jpeek.patterns.example5.SaveButton.setBounds</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">label</op>
+                     <op code="call">
+                        <name>java.awt.Font.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                           <arg type="II">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setFont</name>
+                        <args>
+                           <arg type="Ljava/awt/Font">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">label</op>
+                     <op code="call">
+                        <name>javax.swing.JLabel.setBounds</name>
+                        <args>
+                           <arg type="IIII">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">label</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">titleLabel</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">title</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textLabel</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">textBox</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">save</op>
+                     <op code="call">
+                        <name>javax.swing.JPanel.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setLayout</name>
+                        <args>
+                           <arg type="Ljava/awt/LayoutManager">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.getContentPane</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Container.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.getContentPane</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.awt.Container.add</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setResizable</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setLocationRelativeTo</name>
+                        <args>
+                           <arg type="Ljava/awt/Component">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>javax.swing.JFrame.setVisible</name>
+                        <args>
+                           <arg type="Z">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+      </package>
+   </app>
+</skeleton>
