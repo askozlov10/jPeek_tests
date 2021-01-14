@@ -1,9 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-06T15:00:42.494Z"
+<skeleton date="2021-01-13T13:47:51.972Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/1/out/production/1/org/ex3">
       <package id="org.ex3">
+         <class id="RoundPeg"><!--Package: org.ex3; name: org.ex3.RoundPeg; file: org.ex3.RoundPeg-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="D">radius</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(D)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="D">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">radius</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()D"
+                       name="getRadius"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>D</return>
+                  <ops>
+                     <op code="get">radius</op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
          <class id="SquarePegAdapter"><!--Package: org.ex3; name: org.ex3.SquarePegAdapter; file: org.ex3.SquarePegAdapter-->
             <attributes>
                <attribute final="false"
@@ -129,65 +188,6 @@
                            <arg type="">?</arg>
                         </args>
                      </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="RoundPeg"><!--Package: org.ex3; name: org.ex3.RoundPeg; file: org.ex3.RoundPeg-->
-            <attributes>
-               <attribute final="false" public="false" static="false" type="D">radius</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="()V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(D)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="D">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">radius</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()D"
-                       name="getRadius"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>D</return>
-                  <ops>
-                     <op code="get">radius</op>
                   </ops>
                </method>
             </methods>

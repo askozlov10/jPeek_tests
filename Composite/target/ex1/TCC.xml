@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-13T13:53:57.363Z"
+        schema="xsd/skeleton.xsd"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>TCC</title>
+   <description>TCC(C) = NDC(C) / NP(C), where C is the class, NP(C) is a
+          maximal possible number of direct or indirect connections - N * (N - 1) / 2,
+          NDC(C) is a number of direct connections.
+          Value of the metric is in range [0, 1], greater is better.
+        </description>
+   <app element="false"
+        id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex1">
+      <package element="false" id="ex1">
+         <class color="yellow"
+                element="true"
+                id="ImageEditor$EditorCanvas"
+                value="0.4">
+            <vars>
+               <var id="attributes">2</var>
+               <var id="methods">5</var>
+               <var id="NC">10</var>
+               <var id="NDC">4</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Dot" value="0">
+            <vars>
+               <var id="attributes">1</var>
+               <var id="methods">3</var>
+               <var id="NC">3</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Circle" value="0.3333">
+            <vars>
+               <var id="attributes">1</var>
+               <var id="methods">3</var>
+               <var id="NC">3</var>
+               <var id="NDC">1</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="1">
+            <vars>
+               <var id="attributes">0</var>
+               <var id="methods">0</var>
+               <var id="NC">0</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ImageEditor" value="1">
+            <vars>
+               <var id="attributes">2</var>
+               <var id="methods">1</var>
+               <var id="NC">0</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BaseShape" value="0.0758">
+            <vars>
+               <var id="attributes">4</var>
+               <var id="methods">12</var>
+               <var id="NC">66</var>
+               <var id="NDC">5</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Rectangle" value="0">
+            <vars>
+               <var id="attributes">2</var>
+               <var id="methods">3</var>
+               <var id="NC">3</var>
+               <var id="NDC">0</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="CompoundShape" value="0.8571">
+            <vars>
+               <var id="attributes">1</var>
+               <var id="methods">14</var>
+               <var id="NC">91</var>
+               <var id="NDC">78</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
+   <min>0.0758</min>
+   <max>0.8571</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 8, steps: 32; all: 4; min: 0.0758; max: 0.8571; delta: 0.024415625-->
+      <bar color="red" x="0">1</bar>
+      <!--step: 0, left: 0.0758, right: 0.10021563-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 0.10021563, right: 0.124631256-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 0.124631256, right: 0.14904687-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 0.14904687, right: 0.17346251-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0.17346251, right: 0.19787812-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 0.19787812, right: 0.22229375-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0.22229375, right: 0.24670938-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 0.24670938, right: 0.27112502-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0.27112502, right: 0.29554063-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 0.29554063, right: 0.31995624-->
+      <bar color="red" x="0.3125">1</bar>
+      <!--step: 10, left: 0.31995624, right: 0.34437189-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0.34437189, right: 0.3687875-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0.3687875, right: 0.39320314-->
+      <bar color="yellow" x="0.40625">1</bar>
+      <!--step: 13, left: 0.39320314, right: 0.41761875-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.41761875, right: 0.4420344-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 0.4420344, right: 0.46645-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.46645, right: 0.49086562-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 0.49086562, right: 0.51528126-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 0.51528126, right: 0.5396969-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.5396969, right: 0.56411254-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0.56411254, right: 0.58852816-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.58852816, right: 0.61294377-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0.61294377, right: 0.6373594-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0.6373594, right: 0.661775-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.661775, right: 0.6861906-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0.6861906, right: 0.7106063-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.7106063, right: 0.7350219-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.7350219, right: 0.7594375-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.7594375, right: 0.7838531-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0.7838531, right: 0.8082688-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0.8082688, right: 0.8326844-->
+      <bar color="green" x="0.96875">1</bar>
+      <!--step: 31, left: 0.8326844, right: 0.8571-->
+   </bars>
+   <statistics>
+      <total>8</total>
+      <elements>4</elements>
+      <mean>0.41655</mean>
+      <sigma>0.28169102310865357</sigma>
+      <variance>0.0793498325</variance>
+      <defects>0.5</defects>
+   </statistics>
+</metric>

@@ -1,98 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-09T08:46:33.017Z"
+<skeleton date="2021-01-13T14:01:48.514Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Decorator/out/production/Decorator/ex3">
       <package id="ex3">
-         <class id="ShapeDecorator"><!--Package: ex3; name: ex3.ShapeDecorator; file: ex3.ShapeDecorator-->
-            <attributes>
-               <attribute final="false" public="false" static="false" type="Lex3/Shape">decoratedShape</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(Lex3/Shape;)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Lex3/Shape">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">decoratedShape</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()V"
-                       name="draw"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="get">decoratedShape</op>
-                     <op code="call">
-                        <name>ex3.Shape.draw</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="Circle"><!--Package: ex3; name: ex3.Circle; file: ex3.Circle-->
-            <attributes/>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="()V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()V"
-                       name="draw"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="get_static">java.lang.System.out</op>
-                     <op code="call">
-                        <name>java.io.PrintStream.println</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
          <class id="Rectangle"><!--Package: ex3; name: ex3.Rectangle; file: ex3.Rectangle-->
             <attributes/>
             <methods>
@@ -194,6 +105,95 @@
                   <args>
                      <arg type="Lex3/Shape">?</arg>
                   </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="ShapeDecorator"><!--Package: ex3; name: ex3.ShapeDecorator; file: ex3.ShapeDecorator-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="Lex3/Shape">decoratedShape</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex3/Shape;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex3/Shape">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">decoratedShape</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="draw"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">decoratedShape</op>
+                     <op code="call">
+                        <name>ex3.Shape.draw</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Circle"><!--Package: ex3; name: ex3.Circle; file: ex3.Circle-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="draw"
+                       static="false"
+                       visibility="public">
+                  <args/>
                   <return>V</return>
                   <ops>
                      <op code="get_static">java.lang.System.out</op>

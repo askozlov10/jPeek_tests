@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-08T09:13:59.718Z"
+        date="2021-01-13T13:51:42.951Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -20,12 +20,6 @@
                <var id="l">0</var>
             </vars>
          </class>
-         <class color="green" element="false" id="Blue" value="NaN">
-            <vars>
-               <var id="k">1</var>
-               <var id="l">0</var>
-            </vars>
-         </class>
          <class color="green" element="false" id="Shape" value="NaN">
             <vars>
                <var id="k">1</var>
@@ -35,6 +29,12 @@
          <class color="green" element="false" id="Main" value="NaN">
             <vars>
                <var id="k">0</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Blue" value="NaN">
+            <vars>
+               <var id="k">1</var>
                <var id="l">0</var>
             </vars>
          </class>

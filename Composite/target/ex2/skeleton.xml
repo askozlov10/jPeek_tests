@@ -1,9 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-09T06:54:16.522Z"
+<skeleton date="2021-01-13T13:55:38.965Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex2">
       <package id="ex2">
+         <class id="HeadDepartment"><!--Package: ex2; name: ex2.HeadDepartment; file: ex2.HeadDepartment-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/Integer">id</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">name</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/List">childDepartments</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/Integer;Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/Integer">?</arg>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">id</op>
+                     <op code="put">name</op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">childDepartments</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="printDepartmentName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">childDepartments</op>
+                     <op code="call">
+                        <name>java.util.List.forEach</name>
+                        <args>
+                           <arg type="Ljava/util/function/Consumer">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lex2/Department;)V"
+                       name="addDepartment"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex2/Department">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">childDepartments</op>
+                     <op code="call">
+                        <name>java.util.List.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lex2/Department;)V"
+                       name="removeDepartment"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex2/Department">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">childDepartments</op>
+                     <op code="call">
+                        <name>java.util.List.remove</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
          <class id="FinancialDepartment"><!--Package: ex2; name: ex2.FinancialDepartment; file: ex2.FinancialDepartment-->
             <attributes>
                <attribute final="false"
@@ -226,115 +335,6 @@
                         <name>ex2.HeadDepartment.printDepartmentName</name>
                         <args>
                            <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="HeadDepartment"><!--Package: ex2; name: ex2.HeadDepartment; file: ex2.HeadDepartment-->
-            <attributes>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Ljava/lang/Integer">id</attribute>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Ljava/lang/String">name</attribute>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Ljava/util/List">childDepartments</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(Ljava/lang/Integer;Ljava/lang/String;)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Ljava/lang/Integer">?</arg>
-                     <arg type="Ljava/lang/String">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">id</op>
-                     <op code="put">name</op>
-                     <op code="call">
-                        <name>java.util.ArrayList.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">childDepartments</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()V"
-                       name="printDepartmentName"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="get">childDepartments</op>
-                     <op code="call">
-                        <name>java.util.List.forEach</name>
-                        <args>
-                           <arg type="Ljava/util/function/Consumer">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="(Lex2/Department;)V"
-                       name="addDepartment"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Lex2/Department">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="get">childDepartments</op>
-                     <op code="call">
-                        <name>java.util.List.add</name>
-                        <args>
-                           <arg type="Ljava/lang/Object">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="(Lex2/Department;)V"
-                       name="removeDepartment"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Lex2/Department">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="get">childDepartments</op>
-                     <op code="call">
-                        <name>java.util.List.remove</name>
-                        <args>
-                           <arg type="Ljava/lang/Object">?</arg>
                         </args>
                      </op>
                   </ops>

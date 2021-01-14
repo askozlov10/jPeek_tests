@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-09T06:52:25.387Z"
+        date="2021-01-13T13:53:57.363Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -14,25 +14,22 @@
    <app element="false"
         id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex1">
       <package element="false" id="ex1">
-         <class color="green" element="false" id="ImageEditor" value="1">
+         <class color="red"
+                element="true"
+                id="ImageEditor$EditorCanvas"
+                value="0.2">
             <vars>
-               <var id="k">1</var>
+               <var id="k">5</var>
                <var id="l">1</var>
             </vars>
          </class>
-         <class color="red" element="true" id="BaseShape" value="0.2083">
-            <vars>
-               <var id="k">12</var>
-               <var id="l">2</var>
-            </vars>
-         </class>
-         <class color="red" element="true" id="Circle" value="0.3333">
+         <class color="red" element="true" id="Dot" value="0.3333">
             <vars>
                <var id="k">3</var>
                <var id="l">1</var>
             </vars>
          </class>
-         <class color="red" element="true" id="Dot" value="0.3333">
+         <class color="red" element="true" id="Circle" value="0.3333">
             <vars>
                <var id="k">3</var>
                <var id="l">1</var>
@@ -44,13 +41,16 @@
                <var id="l">0</var>
             </vars>
          </class>
-         <class color="red"
-                element="true"
-                id="ImageEditor$EditorCanvas"
-                value="0.2">
+         <class color="green" element="false" id="ImageEditor" value="1">
             <vars>
-               <var id="k">5</var>
+               <var id="k">1</var>
                <var id="l">1</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BaseShape" value="0.2083">
+            <vars>
+               <var id="k">12</var>
+               <var id="l">2</var>
             </vars>
          </class>
          <class color="red" element="true" id="Rectangle" value="0.3333">

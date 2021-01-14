@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-13T13:53:57.363Z"
+        schema="xsd/skeleton.xsd"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>OCC</title>
+   <description>Optimistic Class Cohesion (OCC) quantifies the maximum extent
+          of shared attributes between any two methods among all methods of
+          a class. That is, for all pairs of methods of a class, it calculates
+          a score based on the number of attributes of the class they both use
+          in common, and then the maximum score is taken as the value for OCC.
+          OCC is given a value of 0 for the exceptional case when the class has
+          only one method.</description>
+   <app element="false"
+        id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex1">
+      <package element="false" id="ex1">
+         <class color="yellow"
+                element="true"
+                id="ImageEditor$EditorCanvas"
+                value="0.5">
+            <vars>
+               <var id="n">5</var>
+               <var id="A">3</var>
+               <var id="Rw_total">4</var>
+               <var id="Rw_max">0.5</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Dot" value="0">
+            <vars>
+               <var id="n">3</var>
+               <var id="A">1</var>
+               <var id="Rw_total">0</var>
+            </vars>
+         </class>
+         <class color="yellow" element="true" id="Circle" value="0.5">
+            <vars>
+               <var id="n">3</var>
+               <var id="A">1</var>
+               <var id="Rw_total">1</var>
+               <var id="Rw_max">0.5</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="NaN">
+            <vars>
+               <var id="n">0</var>
+               <var id="A">0</var>
+               <var id="Rw_total">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="ImageEditor" value="0">
+            <vars>
+               <var id="n">1</var>
+               <var id="A">2</var>
+               <var id="Rw_total">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BaseShape" value="0.1818">
+            <vars>
+               <var id="n">12</var>
+               <var id="A">4</var>
+               <var id="Rw_total">5</var>
+               <var id="Rw_max">0.18181818181818182</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Rectangle" value="0">
+            <vars>
+               <var id="n">3</var>
+               <var id="A">2</var>
+               <var id="Rw_total">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="CompoundShape" value="0.9231">
+            <vars>
+               <var id="n">14</var>
+               <var id="A">1</var>
+               <var id="Rw_total">78</var>
+               <var id="Rw_max">0.9230769230769231</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
+   <min>0.1818</min>
+   <max>0.5</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 8, steps: 32; all: 3; min: 0.1818; max: 0.5; delta: 0.00994375-->
+      <bar color="red" x="0">1</bar>
+      <!--step: 0, left: 0.1818, right: 0.19174375-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 0.19174375, right: 0.20168748-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 0.20168748, right: 0.21163124-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 0.21163124, right: 0.22157499-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0.22157499, right: 0.23151875-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 0.23151875, right: 0.2414625-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0.2414625, right: 0.25140625-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 0.25140625, right: 0.26134998-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0.26134998, right: 0.27129376-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 0.27129376, right: 0.28123748-->
+      <bar color="yellow" x="0.3125">0</bar>
+      <!--step: 10, left: 0.28123748, right: 0.29118124-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0.29118124, right: 0.301125-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0.301125, right: 0.31106874-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 0.31106874, right: 0.3210125-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.3210125, right: 0.33095622-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 0.33095622, right: 0.3409-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.3409, right: 0.35084373-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 0.35084373, right: 0.3607875-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 0.3607875, right: 0.37073123-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.37073123, right: 0.380675-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0.380675, right: 0.39061874-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.39061874, right: 0.40056247-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0.40056247, right: 0.41050625-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0.41050625, right: 0.42044997-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.42044997, right: 0.43039376-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0.43039376, right: 0.44033748-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.44033748, right: 0.45028126-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.45028126, right: 0.460225-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.460225, right: 0.4701687-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0.4701687, right: 0.4801125-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0.4801125, right: 0.49005622-->
+      <bar color="yellow" x="0.96875">2</bar>
+      <!--step: 31, left: 0.49005622, right: 0.5-->
+   </bars>
+   <statistics>
+      <total>8</total>
+      <elements>3</elements>
+      <mean>0.3939333333333333</mean>
+      <sigma>0.1500009185157063</sigma>
+      <variance>0.022500275555555557</variance>
+      <defects>0.3333333333333333</defects>
+   </statistics>
+</metric>

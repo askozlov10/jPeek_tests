@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-09T08:44:24.859Z"
+<skeleton date="2021-01-13T13:58:11.227Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Decorator/out/production/Decorator/ex1">
@@ -335,187 +335,6 @@
                </method>
             </methods>
          </class>
-         <class id="FileDataSource"><!--Package: ex1; name: ex1.FileDataSource; file: ex1.FileDataSource-->
-            <attributes>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Ljava/lang/String">name</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(Ljava/lang/String;)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Ljava/lang/String">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">name</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="(Ljava/lang/String;)V"
-                       name="writeData"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Ljava/lang/String">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="get">name</op>
-                     <op code="call">
-                        <name>java.io.File.&lt;init&gt;</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.FileOutputStream.&lt;init&gt;</name>
-                        <args>
-                           <arg type="Ljava/io/File">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.String.getBytes</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.String.length</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.OutputStream.write</name>
-                        <args>
-                           <arg type="[BII">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.OutputStream.close</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.OutputStream.close</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.Throwable.addSuppressed</name>
-                        <args>
-                           <arg type="Ljava/lang/Throwable">?</arg>
-                        </args>
-                     </op>
-                     <op code="get_static">java.lang.System.out</op>
-                     <op code="call">
-                        <name>java.io.IOException.getMessage</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.PrintStream.println</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/lang/String;"
-                       name="readData"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/lang/String</return>
-                  <ops>
-                     <op code="get">name</op>
-                     <op code="call">
-                        <name>java.io.File.&lt;init&gt;</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.FileReader.&lt;init&gt;</name>
-                        <args>
-                           <arg type="Ljava/io/File">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.File.length</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.FileReader.read</name>
-                        <args>
-                           <arg type="[C">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.FileReader.close</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.FileReader.close</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.Throwable.addSuppressed</name>
-                        <args>
-                           <arg type="Ljava/lang/Throwable">?</arg>
-                        </args>
-                     </op>
-                     <op code="get_static">java.lang.System.out</op>
-                     <op code="call">
-                        <name>java.io.IOException.getMessage</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.io.PrintStream.println</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.String.&lt;init&gt;</name>
-                        <args>
-                           <arg type="[C">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
          <class id="CompressionDecorator"><!--Package: ex1; name: ex1.CompressionDecorator; file: ex1.CompressionDecorator-->
             <attributes>
                <attribute final="false" public="false" static="false" type="I">compLevel</attribute>
@@ -778,6 +597,187 @@
                         <name>java.lang.String.&lt;init&gt;</name>
                         <args>
                            <arg type="[B">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="FileDataSource"><!--Package: ex1; name: ex1.FileDataSource; file: ex1.FileDataSource-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">name</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">name</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="writeData"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get">name</op>
+                     <op code="call">
+                        <name>java.io.File.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileOutputStream.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/File">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.getBytes</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.length</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.OutputStream.write</name>
+                        <args>
+                           <arg type="[BII">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.OutputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.OutputStream.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Throwable.addSuppressed</name>
+                        <args>
+                           <arg type="Ljava/lang/Throwable">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.IOException.getMessage</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="readData"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">name</op>
+                     <op code="call">
+                        <name>java.io.File.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileReader.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Ljava/io/File">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.File.length</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileReader.read</name>
+                        <args>
+                           <arg type="[C">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileReader.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.FileReader.close</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Throwable.addSuppressed</name>
+                        <args>
+                           <arg type="Ljava/lang/Throwable">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.IOException.getMessage</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.&lt;init&gt;</name>
+                        <args>
+                           <arg type="[C">?</arg>
                         </args>
                      </op>
                   </ops>

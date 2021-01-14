@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-06T14:58:15.401Z"
+<skeleton date="2021-01-13T13:39:54.318Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/1/out/production/1/org/ex1">
@@ -156,6 +156,89 @@
                </method>
             </methods>
          </class>
+         <class id="AudiA3Rus"><!--Package: org.ex1; name: org.ex1.AudiA3Rus; file: org.ex1.AudiA3Rus-->
+            <attributes>
+               <attribute final="true" public="true" static="false" type="I">light</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">light</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="drive"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="basicLightOn"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="basicLightOff"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
          <class id="Main"><!--Package: org.ex1; name: org.ex1.Main; file: org.ex1.Main-->
             <attributes/>
             <methods>
@@ -302,89 +385,6 @@
                        ctor="false"
                        desc="()V"
                        name="xenonOff"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="get_static">java.lang.System.out</op>
-                     <op code="call">
-                        <name>java.io.PrintStream.println</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="AudiA3Rus"><!--Package: org.ex1; name: org.ex1.AudiA3Rus; file: org.ex1.AudiA3Rus-->
-            <attributes>
-               <attribute final="true" public="true" static="false" type="I">light</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="()V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="default">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">light</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()V"
-                       name="drive"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="get_static">java.lang.System.out</op>
-                     <op code="call">
-                        <name>java.io.PrintStream.println</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()V"
-                       name="basicLightOn"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="get_static">java.lang.System.out</op>
-                     <op code="call">
-                        <name>java.io.PrintStream.println</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()V"
-                       name="basicLightOff"
                        static="false"
                        visibility="public">
                   <args/>

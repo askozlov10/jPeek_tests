@@ -1,105 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2020-12-26T15:43:59.191596300Z"
+        date="2021-01-14T17:17:19.504639500Z"
         version="1.0-SNAPSHOT"
         xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
    <classes>
       <class id="main.MacButton"
-             rank="0.8400"
+             rank="0.7714"
              short_id="m.MacButton"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="main.MacGUIFactory"
-             rank="0.8400"
+             rank="0.6571"
              short_id="m.MacGUIFactory"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="CCM" rank="1"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="main.MacSelect"
-             rank="0.8400"
+             rank="0.7714"
              short_id="m.MacSelect"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="main.MacTextField"
-             rank="0.8400"
+             rank="0.7714"
              short_id="m.MacTextField"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
-      <class id="main.Main" rank="0.8400" short_id="m.Main" trust="0.5">
+      <class id="main.Main" rank="0.7143" short_id="m.Main" trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="main.OrderCoffeeForm"
-             rank="1.0000"
+             rank="0.8286"
              short_id="m.OrderCoffeeForm"
-             trust="1">
+             trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="green" name="LCOM5" rank="5"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="main.WindowsButton"
-             rank="0.8400"
+             rank="0.7714"
              short_id="m.WindowsButton"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="main.WindowsGUIFactory"
-             rank="0.8400"
+             rank="0.6571"
              short_id="m.WindowsGUIFactory"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="red" name="CCM" rank="1"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="main.WindowsSelect"
-             rank="0.8400"
+             rank="0.7714"
              short_id="m.WindowsSelect"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="main.WindowsTextField"
-             rank="0.8400"
+             rank="0.7714"
              short_id="m.WindowsTextField"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
    </classes>
 </matrix>

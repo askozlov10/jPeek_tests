@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-09T06:54:55.789Z"
+        date="2021-01-13T13:56:24.204Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -36,10 +36,26 @@
                <var id="SCOM_minK">0.999999999999999999</var>
             </vars>
          </class>
-         <class color="green" element="false" id="WorkLoader" value="3">
+         <class color="green" element="false" id="Main" value="NaN">
             <vars>
-               <var id="m">2</var>
-               <var id="pairs">1</var>
+               <var id="m">0</var>
+               <var id="pairs">0</var>
+               <var id="a">0</var>
+               <var id="SCOM_minK">NaN</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Employee" value="0.2981">
+            <vars>
+               <var id="m">10</var>
+               <var id="pairs">45</var>
+               <var id="a">3</var>
+               <var id="SCOM_minK">0.133333333333333326</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="Manager" value="1.53">
+            <vars>
+               <var id="m">5</var>
+               <var id="pairs">10</var>
                <var id="a">1</var>
                <var id="SCOM_minK">1</var>
             </vars>
@@ -52,28 +68,12 @@
                <var id="SCOM_minK">0.3</var>
             </vars>
          </class>
-         <class color="green" element="false" id="Main" value="NaN">
+         <class color="green" element="false" id="WorkLoader" value="3">
             <vars>
-               <var id="m">0</var>
-               <var id="pairs">0</var>
-               <var id="a">0</var>
-               <var id="SCOM_minK">NaN</var>
-            </vars>
-         </class>
-         <class color="green" element="true" id="Manager" value="1.53">
-            <vars>
-               <var id="m">5</var>
-               <var id="pairs">10</var>
+               <var id="m">2</var>
+               <var id="pairs">1</var>
                <var id="a">1</var>
                <var id="SCOM_minK">1</var>
-            </vars>
-         </class>
-         <class color="red" element="false" id="Employee" value="0.2981">
-            <vars>
-               <var id="m">10</var>
-               <var id="pairs">45</var>
-               <var id="a">3</var>
-               <var id="SCOM_minK">0.133333333333333326</var>
             </vars>
          </class>
       </package>
@@ -151,8 +151,8 @@
       <total>6</total>
       <elements>3</elements>
       <mean>0.9211</mean>
-      <sigma>0.4887784978904044</sigma>
-      <variance>0.23890442000000003</variance>
+      <sigma>0.48877849789040434</sigma>
+      <variance>0.23890442</variance>
       <defects>0.6666666666666666</defects>
    </statistics>
 </metric>

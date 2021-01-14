@@ -1,45 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-06T14:59:19.569Z"
+        date="2021-01-13T13:46:38.430Z"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
    <classes>
-      <class id="org.ex2.Main" rank="0.8400" short_id="o.e.Main" trust="0.5">
+      <class id="org.ex2.Main" rank="0.7867" short_id="o.e.Main" trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="org.ex2.RandomGenerator"
-             rank="0.8400"
+             rank="0.7333"
              short_id="o.e.RandomGenerator"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="org.ex2.RandomGeneratorAdapter"
-             rank="0.8400"
+             rank="0.7333"
              short_id="o.e.RandomGeneratorAdapter"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="org.ex2.SequenceGenerator"
-             rank="0.8400"
+             rank="0.7333"
              short_id="o.e.SequenceGenerator"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
    </classes>
 </matrix>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-09T08:44:24.859Z"
+        date="2021-01-13T13:58:11.227Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -39,16 +39,16 @@
                <var id="l">0</var>
             </vars>
          </class>
-         <class color="red" element="false" id="FileDataSource" value="0">
-            <vars>
-               <var id="k">2</var>
-               <var id="l">1</var>
-            </vars>
-         </class>
          <class color="red" element="false" id="CompressionDecorator" value="0">
             <vars>
                <var id="k">4</var>
                <var id="l">2</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="FileDataSource" value="0">
+            <vars>
+               <var id="k">2</var>
+               <var id="l">1</var>
             </vars>
          </class>
       </package>

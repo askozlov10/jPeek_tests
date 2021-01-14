@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-06T15:00:42.494Z"
+        date="2021-01-13T13:50:56.224Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -19,36 +19,36 @@
                interpreted in terms of cohesion, suggesting that they be treated
                as percentages of the "no cohesion" score '1'</description>
    <app element="false"
-        id="/Users/antonsavacenko/IdeaProjects/Adapter/1/out/production/1/org/ex3">
-      <package element="false" id="org.ex3">
-         <class color="red" element="false" id="SquarePegAdapter" value="NaN">
+        id="/Users/antonsavacenko/IdeaProjects/Adapter/Bridge/out/production/Bridge/ex1">
+      <package element="false" id="ex1">
+         <class color="red" element="false" id="AdvancedRemote" value="NaN">
             <vars>
                <var id="m">1</var>
-               <var id="a">1</var>
-            </vars>
-         </class>
-         <class color="red" element="false" id="RoundHole" value="1">
-            <vars>
-               <var id="m">2</var>
-               <var id="a">1</var>
-            </vars>
-         </class>
-         <class color="red" element="false" id="RoundPeg" value="NaN">
-            <vars>
-               <var id="m">1</var>
-               <var id="a">1</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="SquarePeg" value="-0">
-            <vars>
-               <var id="m">2</var>
-               <var id="a">1</var>
+               <var id="a">0</var>
             </vars>
          </class>
          <class color="red" element="false" id="Main" value="NaN">
             <vars>
                <var id="m">0</var>
                <var id="a">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Tv" value="0.6667">
+            <vars>
+               <var id="m">8</var>
+               <var id="a">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="BasicRemote" value="-0">
+            <vars>
+               <var id="m">5</var>
+               <var id="a">1</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Radio" value="0.6667">
+            <vars>
+               <var id="m">8</var>
+               <var id="a">3</var>
             </vars>
          </class>
       </package>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-08T09:15:33.593Z"
+<skeleton date="2021-01-13T13:52:08.114Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Bridge/out/production/Bridge/ex3">
@@ -115,48 +115,6 @@
                </method>
             </methods>
          </class>
-         <class id="GreenColor"><!--Package: ex3; name: ex3.GreenColor; file: ex3.GreenColor-->
-            <attributes/>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="()V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="default">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()V"
-                       name="applyColor"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="get_static">java.lang.System.out</op>
-                     <op code="call">
-                        <name>java.io.PrintStream.println</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
          <class id="RedColor"><!--Package: ex3; name: ex3.RedColor; file: ex3.RedColor-->
             <attributes/>
             <methods>
@@ -199,7 +157,49 @@
                </method>
             </methods>
          </class>
-         <class id="Pentagon"><!--Package: ex3; name: ex3.Pentagon; file: ex3.Pentagon-->
+         <class id="GreenColor"><!--Package: ex3; name: ex3.GreenColor; file: ex3.GreenColor-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="applyColor"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Triangle"><!--Package: ex3; name: ex3.Triangle; file: ex3.Triangle-->
             <attributes/>
             <methods>
                <method abstract="false"
@@ -250,7 +250,7 @@
                </method>
             </methods>
          </class>
-         <class id="Triangle"><!--Package: ex3; name: ex3.Triangle; file: ex3.Triangle-->
+         <class id="Pentagon"><!--Package: ex3; name: ex3.Pentagon; file: ex3.Pentagon-->
             <attributes/>
             <methods>
                <method abstract="false"

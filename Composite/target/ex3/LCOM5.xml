@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-09T06:54:55.789Z"
+        date="2021-01-13T13:56:24.204Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -27,9 +27,21 @@
                <var id="a">1</var>
             </vars>
          </class>
-         <class color="green" element="false" id="WorkLoader" value="-0">
+         <class color="red" element="false" id="Main" value="NaN">
             <vars>
-               <var id="m">2</var>
+               <var id="m">0</var>
+               <var id="a">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Employee" value="0.7407">
+            <vars>
+               <var id="m">10</var>
+               <var id="a">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Manager" value="-0">
+            <vars>
+               <var id="m">5</var>
                <var id="a">1</var>
             </vars>
          </class>
@@ -39,22 +51,10 @@
                <var id="a">2</var>
             </vars>
          </class>
-         <class color="red" element="false" id="Main" value="NaN">
+         <class color="green" element="false" id="WorkLoader" value="-0">
             <vars>
-               <var id="m">0</var>
-               <var id="a">0</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="Manager" value="-0">
-            <vars>
-               <var id="m">5</var>
+               <var id="m">2</var>
                <var id="a">1</var>
-            </vars>
-         </class>
-         <class color="red" element="false" id="Employee" value="0.7407">
-            <vars>
-               <var id="m">10</var>
-               <var id="a">3</var>
             </vars>
          </class>
       </package>

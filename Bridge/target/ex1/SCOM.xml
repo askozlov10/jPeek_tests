@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-06T15:00:42.494Z"
+        date="2021-01-13T13:50:56.224Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -26,38 +26,14 @@
           which "we can claim that [the class] has at least two clusters and
           it must be subdivided into smaller, more cohesive classes".</description>
    <app element="false"
-        id="/Users/antonsavacenko/IdeaProjects/Adapter/1/out/production/1/org/ex3">
-      <package element="false" id="org.ex3">
-         <class color="green" element="false" id="SquarePegAdapter" value="NaN">
+        id="/Users/antonsavacenko/IdeaProjects/Adapter/Bridge/out/production/Bridge/ex1">
+      <package element="false" id="ex1">
+         <class color="green" element="false" id="AdvancedRemote" value="NaN">
             <vars>
                <var id="m">1</var>
                <var id="pairs">0</var>
-               <var id="a">1</var>
+               <var id="a">0</var>
                <var id="SCOM_minK">NaN</var>
-            </vars>
-         </class>
-         <class color="red" element="false" id="RoundHole" value="0">
-            <vars>
-               <var id="m">2</var>
-               <var id="pairs">1</var>
-               <var id="a">1</var>
-               <var id="SCOM_minK">1</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="RoundPeg" value="NaN">
-            <vars>
-               <var id="m">1</var>
-               <var id="pairs">0</var>
-               <var id="a">1</var>
-               <var id="SCOM_minK">NaN</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="SquarePeg" value="3">
-            <vars>
-               <var id="m">2</var>
-               <var id="pairs">1</var>
-               <var id="a">1</var>
-               <var id="SCOM_minK">1</var>
             </vars>
          </class>
          <class color="green" element="false" id="Main" value="NaN">
@@ -68,12 +44,36 @@
                <var id="SCOM_minK">NaN</var>
             </vars>
          </class>
+         <class color="yellow" element="false" id="Tv" value="0.5595">
+            <vars>
+               <var id="m">8</var>
+               <var id="pairs">28</var>
+               <var id="a">3</var>
+               <var id="SCOM_minK">0.1309523809523809549940476190476190475</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="BasicRemote" value="0.8">
+            <vars>
+               <var id="m">5</var>
+               <var id="pairs">10</var>
+               <var id="a">1</var>
+               <var id="SCOM_minK">1</var>
+            </vars>
+         </class>
+         <class color="yellow" element="false" id="Radio" value="0.5595">
+            <vars>
+               <var id="m">8</var>
+               <var id="pairs">28</var>
+               <var id="a">3</var>
+               <var id="SCOM_minK">0.1309523809523809549940476190476190475</var>
+            </vars>
+         </class>
       </package>
    </app>
    <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
    <min>0</min>
    <max>0</max>
-   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 5, steps: 32; all: 1; min: 0; max: 0; delta: 0-->
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 5, steps: 32; all: 0; min: 0; max: 0; delta: 0-->
       <bar color="yellow" x="0">0</bar>
       <!--step: 0, left: 0, right: 0-->
       <bar color="yellow" x="0.03125">0</bar>
@@ -136,15 +136,15 @@
       <!--step: 29, left: 0, right: 0-->
       <bar color="yellow" x="0.9375">0</bar>
       <!--step: 30, left: 0, right: 0-->
-      <bar color="red" x="0.96875">1</bar>
+      <bar color="yellow" x="0.96875">0</bar>
       <!--step: 31, left: 0, right: 0-->
    </bars>
    <statistics>
       <total>5</total>
-      <elements>1</elements>
-      <mean>0.0</mean>
-      <sigma>0.0</sigma>
-      <variance>0.0</variance>
-      <defects>0.0</defects>
+      <elements>0</elements>
+      <mean>NaN</mean>
+      <sigma>NaN</sigma>
+      <variance>NaN</variance>
+      <defects>NaN</defects>
    </statistics>
 </metric>

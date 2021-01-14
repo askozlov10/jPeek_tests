@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-08T09:13:59.718Z"
+<skeleton date="2021-01-13T13:51:42.951Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Bridge/out/production/Bridge/ex2">
@@ -45,39 +45,6 @@
                         </args>
                      </op>
                   </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="Blue"><!--Package: ex2; name: ex2.Blue; file: ex2.Blue-->
-            <attributes/>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="()V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="default">
-                  <args/>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/lang/String;"
-                       name="fill"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/lang/String</return>
                </method>
             </methods>
          </class>
@@ -177,6 +144,39 @@
                         </args>
                      </op>
                   </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Blue"><!--Package: ex2; name: ex2.Blue; file: ex2.Blue-->
+            <attributes/>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="fill"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
                </method>
             </methods>
          </class>

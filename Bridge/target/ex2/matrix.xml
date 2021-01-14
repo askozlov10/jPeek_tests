@@ -1,36 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-08T09:14:03.437Z"
+        date="2021-01-13T13:51:48.010Z"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
    <classes>
-      <class id="ex2.Blue" rank="0.8400" short_id="e.Blue" trust="0.5">
+      <class id="ex2.Blue" rank="0.7333" short_id="e.Blue" trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
-      <class id="ex2.Main" rank="0.8400" short_id="e.Main" trust="0.5">
+      <class id="ex2.Main" rank="0.7867" short_id="e.Main" trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
-      <class id="ex2.Shape" rank="0.8400" short_id="e.Shape" trust="0.5">
+      <class id="ex2.Shape" rank="0.7867" short_id="e.Shape" trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="green" name="LCOM2" rank="5"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
-      <class id="ex2.Square" rank="0.8400" short_id="e.Square" trust="0.5">
+      <class id="ex2.Square" rank="0.7333" short_id="e.Square" trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
    </classes>
 </matrix>

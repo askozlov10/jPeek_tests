@@ -1,258 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-06T15:00:42.494Z"
+<skeleton date="2021-01-13T13:50:56.224Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
-   <app id="/Users/antonsavacenko/IdeaProjects/Adapter/1/out/production/1/org/ex3">
-      <package id="org.ex3">
-         <class id="SquarePegAdapter"><!--Package: org.ex3; name: org.ex3.SquarePegAdapter; file: org.ex3.SquarePegAdapter-->
-            <attributes>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Lorg/ex3/SquarePeg">peg</attribute>
-            </attributes>
+   <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Bridge/out/production/Bridge/ex1">
+      <package id="ex1">
+         <class id="AdvancedRemote"><!--Package: ex1; name: ex1.AdvancedRemote; file: ex1.AdvancedRemote-->
+            <attributes/>
             <methods>
                <method abstract="false"
                        bridge="false"
                        ctor="true"
-                       desc="(Lorg/ex3/SquarePeg;)V"
+                       desc="(Lex1/Device;)V"
                        name="&lt;init&gt;"
                        static="false"
                        visibility="public">
                   <args>
-                     <arg type="Lorg/ex3/SquarePeg">?</arg>
+                     <arg type="Lex1/Device">?</arg>
                   </args>
                   <return>V</return>
                   <ops>
                      <op code="call">
-                        <name>org.ex3.RoundPeg.&lt;init&gt;</name>
+                        <name>ex1.BasicRemote.&lt;init&gt;</name>
                         <args>
                            <arg type="">?</arg>
                         </args>
                      </op>
-                     <op code="put">peg</op>
+                     <op code="put">device</op>
                   </ops>
                </method>
                <method abstract="false"
                        bridge="false"
                        ctor="false"
-                       desc="()D"
-                       name="getRadius"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>D</return>
-                  <ops>
-                     <op code="get">peg</op>
-                     <op code="call">
-                        <name>org.ex3.SquarePeg.getWidth</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.Math.pow</name>
-                        <args>
-                           <arg type="DD">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.Math.sqrt</name>
-                        <args>
-                           <arg type="D">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="RoundHole"><!--Package: org.ex3; name: org.ex3.RoundHole; file: org.ex3.RoundHole-->
-            <attributes>
-               <attribute final="false" public="false" static="false" type="D">radius</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(D)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="D">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">radius</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()D"
-                       name="getRadius"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>D</return>
-                  <ops>
-                     <op code="get">radius</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="(Lorg/ex3/RoundPeg;)Z"
-                       name="fits"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Lorg/ex3/RoundPeg">?</arg>
-                  </args>
-                  <return>Z</return>
-                  <ops>
-                     <op code="call">
-                        <name>org.ex3.RoundHole.getRadius</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>org.ex3.RoundPeg.getRadius</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="RoundPeg"><!--Package: org.ex3; name: org.ex3.RoundPeg; file: org.ex3.RoundPeg-->
-            <attributes>
-               <attribute final="false" public="false" static="false" type="D">radius</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
                        desc="()V"
-                       name="&lt;init&gt;"
+                       name="mute"
                        static="false"
                        visibility="public">
                   <args/>
                   <return>V</return>
                   <ops>
+                     <op code="get_static">java.lang.System.out</op>
                      <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <name>java.io.PrintStream.println</name>
                         <args>
-                           <arg type="">?</arg>
+                           <arg type="Ljava/lang/String">?</arg>
                         </args>
                      </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(D)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="D">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
+                     <op code="get">device</op>
                      <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <name>ex1.Device.setVolume</name>
                         <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">radius</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()D"
-                       name="getRadius"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>D</return>
-                  <ops>
-                     <op code="get">radius</op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="SquarePeg"><!--Package: org.ex3; name: org.ex3.SquarePeg; file: org.ex3.SquarePeg-->
-            <attributes>
-               <attribute final="false" public="false" static="false" type="D">width</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(D)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="D">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">width</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()D"
-                       name="getWidth"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>D</return>
-                  <ops>
-                     <op code="get">width</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()D"
-                       name="getSquare"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>D</return>
-                  <ops>
-                     <op code="get">width</op>
-                     <op code="call">
-                        <name>java.lang.Math.pow</name>
-                        <args>
-                           <arg type="DD">?</arg>
+                           <arg type="I">?</arg>
                         </args>
                      </op>
                   </ops>
                </method>
             </methods>
          </class>
-         <class id="Main"><!--Package: org.ex3; name: org.ex3.Main; file: org.ex3.Main-->
+         <class id="Main"><!--Package: ex1; name: ex1.Main; file: ex1.Main-->
             <attributes/>
             <methods>
                <method abstract="false"
@@ -286,21 +90,66 @@
                   <return>V</return>
                   <ops>
                      <op code="call">
-                        <name>org.ex3.RoundHole.&lt;init&gt;</name>
+                        <name>ex1.Tv.&lt;init&gt;</name>
                         <args>
-                           <arg type="D">?</arg>
+                           <arg type="">?</arg>
                         </args>
                      </op>
                      <op code="call">
-                        <name>org.ex3.RoundPeg.&lt;init&gt;</name>
+                        <name>ex1.Main.testDevice</name>
                         <args>
-                           <arg type="D">?</arg>
+                           <arg type="Lex1/Device">?</arg>
                         </args>
                      </op>
                      <op code="call">
-                        <name>org.ex3.RoundHole.fits</name>
+                        <name>ex1.Radio.&lt;init&gt;</name>
                         <args>
-                           <arg type="Lorg/ex3/RoundPeg">?</arg>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Main.testDevice</name>
+                        <args>
+                           <arg type="Lex1/Device">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Lex1/Device;)V"
+                       name="testDevice"
+                       static="true"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/Device">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BasicRemote.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex1/Device">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.BasicRemote.power</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Device.printStatus</name>
+                        <args>
+                           <arg type="">?</arg>
                         </args>
                      </op>
                      <op code="get_static">java.lang.System.out</op>
@@ -311,33 +160,173 @@
                         </args>
                      </op>
                      <op code="call">
-                        <name>org.ex3.SquarePeg.&lt;init&gt;</name>
+                        <name>ex1.AdvancedRemote.&lt;init&gt;</name>
                         <args>
-                           <arg type="D">?</arg>
+                           <arg type="Lex1/Device">?</arg>
                         </args>
                      </op>
                      <op code="call">
-                        <name>org.ex3.SquarePeg.&lt;init&gt;</name>
+                        <name>ex1.AdvancedRemote.power</name>
                         <args>
-                           <arg type="D">?</arg>
+                           <arg type="">?</arg>
                         </args>
                      </op>
                      <op code="call">
-                        <name>org.ex3.SquarePegAdapter.&lt;init&gt;</name>
+                        <name>ex1.AdvancedRemote.mute</name>
                         <args>
-                           <arg type="Lorg/ex3/SquarePeg">?</arg>
+                           <arg type="">?</arg>
                         </args>
                      </op>
                      <op code="call">
-                        <name>org.ex3.SquarePegAdapter.&lt;init&gt;</name>
+                        <name>ex1.Device.printStatus</name>
                         <args>
-                           <arg type="Lorg/ex3/SquarePeg">?</arg>
+                           <arg type="">?</arg>
                         </args>
                      </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Tv"><!--Package: ex1; name: ex1.Tv; file: ex1.Tv-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="Z">on</attribute>
+               <attribute final="false" public="false" static="false" type="I">volume</attribute>
+               <attribute final="false" public="false" static="false" type="I">channel</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
                      <op code="call">
-                        <name>org.ex3.RoundHole.fits</name>
+                        <name>java.lang.Object.&lt;init&gt;</name>
                         <args>
-                           <arg type="Lorg/ex3/RoundPeg">?</arg>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">on</op>
+                     <op code="put">volume</op>
+                     <op code="put">channel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Z"
+                       name="isEnabled"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Z</return>
+                  <ops>
+                     <op code="get">on</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="enable"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">on</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="disable"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">on</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getVolume"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">volume</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(I)V"
+                       name="setVolume"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">volume</op>
+                     <op code="put">volume</op>
+                     <op code="put">volume</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getChannel"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">channel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(I)V"
+                       name="setChannel"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">channel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="printStatus"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
                         </args>
                      </op>
                      <op code="get_static">java.lang.System.out</op>
@@ -347,10 +336,430 @@
                            <arg type="Ljava/lang/String">?</arg>
                         </args>
                      </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">on</op>
                      <op code="call">
-                        <name>org.ex3.RoundHole.fits</name>
+                        <name>java.io.PrintStream.println</name>
                         <args>
-                           <arg type="Lorg/ex3/RoundPeg">?</arg>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">volume</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">channel</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="BasicRemote"><!--Package: ex1; name: ex1.BasicRemote; file: ex1.BasicRemote-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="Lex1/Device">device</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex1/Device;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex1/Device">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">device</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="power"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">device</op>
+                     <op code="call">
+                        <name>ex1.Device.isEnabled</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">device</op>
+                     <op code="call">
+                        <name>ex1.Device.disable</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">device</op>
+                     <op code="call">
+                        <name>ex1.Device.enable</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="volumeDown"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">device</op>
+                     <op code="get">device</op>
+                     <op code="call">
+                        <name>ex1.Device.getVolume</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Device.setVolume</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="volumeUp"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">device</op>
+                     <op code="get">device</op>
+                     <op code="call">
+                        <name>ex1.Device.getVolume</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Device.setVolume</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="channelDown"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">device</op>
+                     <op code="get">device</op>
+                     <op code="call">
+                        <name>ex1.Device.getChannel</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Device.setChannel</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="channelUp"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">device</op>
+                     <op code="get">device</op>
+                     <op code="call">
+                        <name>ex1.Device.getChannel</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex1.Device.setChannel</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Radio"><!--Package: ex1; name: ex1.Radio; file: ex1.Radio-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="Z">on</attribute>
+               <attribute final="false" public="false" static="false" type="I">volume</attribute>
+               <attribute final="false" public="false" static="false" type="I">channel</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="()V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="default">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">on</op>
+                     <op code="put">volume</op>
+                     <op code="put">channel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Z"
+                       name="isEnabled"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Z</return>
+                  <ops>
+                     <op code="get">on</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="enable"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">on</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="disable"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">on</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getVolume"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">volume</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(I)V"
+                       name="setVolume"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">volume</op>
+                     <op code="put">volume</op>
+                     <op code="put">volume</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="getChannel"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+                  <ops>
+                     <op code="get">channel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(I)V"
+                       name="setChannel"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="I">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">channel</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()V"
+                       name="printStatus"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>V</return>
+                  <ops>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">on</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">volume</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get_static">java.lang.System.out</op>
+                     <op code="get">channel</op>
+                     <op code="call">
+                        <name>java.io.PrintStream.println</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
                         </args>
                      </op>
                      <op code="get_static">java.lang.System.out</op>

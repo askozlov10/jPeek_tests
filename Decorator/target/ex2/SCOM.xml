@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-09T08:45:44.258Z"
+        date="2021-01-13T13:59:47.253Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -47,19 +47,19 @@
                <var id="SCOM_minK">NaN</var>
             </vars>
          </class>
-         <class color="green" element="false" id="Main" value="NaN">
-            <vars>
-               <var id="m">0</var>
-               <var id="pairs">0</var>
-               <var id="a">0</var>
-               <var id="SCOM_minK">NaN</var>
-            </vars>
-         </class>
          <class color="green" element="false" id="TreeDecorator" value="NaN">
             <vars>
                <var id="m">1</var>
                <var id="pairs">0</var>
                <var id="a">1</var>
+               <var id="SCOM_minK">NaN</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="NaN">
+            <vars>
+               <var id="m">0</var>
+               <var id="pairs">0</var>
+               <var id="a">0</var>
                <var id="SCOM_minK">NaN</var>
             </vars>
          </class>

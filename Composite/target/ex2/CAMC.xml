@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-09T06:54:16.522Z"
+        date="2021-01-13T13:55:38.965Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -14,6 +14,15 @@
    <app element="false"
         id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex2">
       <package element="false" id="ex2">
+         <class color="green"
+                element="false"
+                id="HeadDepartment"
+                value="0.6667">
+            <vars>
+               <var id="k">3</var>
+               <var id="l">1</var>
+            </vars>
+         </class>
          <class color="green"
                 element="false"
                 id="FinancialDepartment"
@@ -33,15 +42,6 @@
             <vars>
                <var id="k">0</var>
                <var id="l">0</var>
-            </vars>
-         </class>
-         <class color="green"
-                element="false"
-                id="HeadDepartment"
-                value="0.6667">
-            <vars>
-               <var id="k">3</var>
-               <var id="l">1</var>
             </vars>
          </class>
       </package>

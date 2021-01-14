@@ -1,55 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <matrix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-06T15:00:45.598Z"
+        date="2021-01-13T13:47:57.588Z"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/matrix.xsd">
    <classes>
-      <class id="org.ex3.Main" rank="0.8400" short_id="o.e.Main" trust="0.5">
+      <class id="org.ex3.Main" rank="0.7867" short_id="o.e.Main" trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="org.ex3.RoundHole"
-             rank="0.2800"
+             rank="0.5200"
              short_id="o.e.RoundHole"
-             trust="0.5">
+             trust="0.3333333333333333">
          <metric color="yellow" name="CAMC" rank="3"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="yellow" name="LCOM2" rank="3"/>
+         <metric color="green" name="LCOM3" rank="5"/>
+         <metric color="red" name="LCOM4" rank="1"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="red" name="MMAC" rank="1"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="red" name="NHD" rank="1"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="red" name="SCOM" rank="1"/>
+         <metric color="red" name="TCC" rank="1"/>
       </class>
       <class id="org.ex3.RoundPeg"
-             rank="0.8400"
+             rank="0.7333"
              short_id="o.e.RoundPeg"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="org.ex3.SquarePeg"
-             rank="1.0000"
+             rank="0.8133"
              short_id="o.e.SquarePeg"
-             trust="1">
+             trust="0.3333333333333333">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="yellow" name="CCM" rank="3"/>
+         <metric color="green" name="LCC" rank="5"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="red" name="LCOM4" rank="1"/>
          <metric color="green" name="LCOM5" rank="5"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="green" name="OCC" rank="5"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
       <class id="org.ex3.SquarePegAdapter"
-             rank="0.8400"
+             rank="0.7333"
              short_id="o.e.SquarePegAdapter"
              trust="0.5">
          <metric color="green" name="CAMC" rank="5"/>
+         <metric color="green" name="CCM" rank="5"/>
+         <metric color="red" name="LCC" rank="1"/>
+         <metric color="green" name="LCOM" rank="5"/>
+         <metric color="red" name="LCOM2" rank="1"/>
+         <metric color="red" name="LCOM3" rank="1"/>
+         <metric color="green" name="LCOM4" rank="5"/>
          <metric color="red" name="LCOM5" rank="1"/>
          <metric color="green" name="MMAC" rank="5"/>
+         <metric color="green" name="MWE" rank="5"/>
          <metric color="green" name="NHD" rank="5"/>
+         <metric color="red" name="OCC" rank="1"/>
+         <metric color="green" name="PCC" rank="5"/>
          <metric color="green" name="SCOM" rank="5"/>
+         <metric color="green" name="TCC" rank="5"/>
       </class>
    </classes>
 </matrix>

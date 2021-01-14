@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2020-12-26T15:43:57.733501100Z"
+        date="2021-01-14T17:17:16.737453300Z"
         schema="xsd/skeleton.xsd"
         version="1.0-SNAPSHOT"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -25,7 +25,7 @@
           Finally, the authors provide a formula for the minimum value beyond
           which "we can claim that [the class] has at least two clusters and
           it must be subdivided into smaller, more cohesive classes".</description>
-   <app element="false" id="D:\jpeek_patterns\abstract_factory">
+   <app element="false" id="D:\jpeek_patterns\abs_factory\abstract_factory">
       <package element="false" id="main">
          <class color="green" element="false" id="WindowsButton" value="NaN">
             <vars>
@@ -43,39 +43,7 @@
                <var id="SCOM_minK">NaN</var>
             </vars>
          </class>
-         <class color="green" element="false" id="MacSelect" value="NaN">
-            <vars>
-               <var id="m">0</var>
-               <var id="pairs">0</var>
-               <var id="a">0</var>
-               <var id="SCOM_minK">NaN</var>
-            </vars>
-         </class>
          <class color="green" element="false" id="MacTextField" value="NaN">
-            <vars>
-               <var id="m">0</var>
-               <var id="pairs">0</var>
-               <var id="a">0</var>
-               <var id="SCOM_minK">NaN</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="Main" value="NaN">
-            <vars>
-               <var id="m">1</var>
-               <var id="pairs">0</var>
-               <var id="a">1</var>
-               <var id="SCOM_minK">NaN</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="OrderCoffeeForm" value="NaN">
-            <vars>
-               <var id="m">0</var>
-               <var id="pairs">0</var>
-               <var id="a">3</var>
-               <var id="SCOM_minK">NaN</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="WindowsTextField" value="NaN">
             <vars>
                <var id="m">0</var>
                <var id="pairs">0</var>
@@ -91,10 +59,39 @@
                <var id="SCOM_minK">NaN</var>
             </vars>
          </class>
-         <class color="green"
-                element="false"
-                id="WindowsGUIFactory"
-                value="NaN">
+         <class color="green" element="false" id="WindowsTextField" value="NaN">
+            <vars>
+               <var id="m">0</var>
+               <var id="pairs">0</var>
+               <var id="a">0</var>
+               <var id="SCOM_minK">NaN</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MacSelect" value="NaN">
+            <vars>
+               <var id="m">0</var>
+               <var id="pairs">0</var>
+               <var id="a">0</var>
+               <var id="SCOM_minK">NaN</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="OrderCoffeeForm" value="NaN">
+            <vars>
+               <var id="m">0</var>
+               <var id="pairs">0</var>
+               <var id="a">3</var>
+               <var id="SCOM_minK">NaN</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="NaN">
+            <vars>
+               <var id="m">1</var>
+               <var id="pairs">0</var>
+               <var id="a">1</var>
+               <var id="SCOM_minK">NaN</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="MacGUIFactory" value="NaN">
             <vars>
                <var id="m">3</var>
                <var id="pairs">3</var>
@@ -102,7 +99,10 @@
                <var id="SCOM_minK">NaN</var>
             </vars>
          </class>
-         <class color="green" element="false" id="MacGUIFactory" value="NaN">
+         <class color="green"
+                element="false"
+                id="WindowsGUIFactory"
+                value="NaN">
             <vars>
                <var id="m">3</var>
                <var id="pairs">3</var>

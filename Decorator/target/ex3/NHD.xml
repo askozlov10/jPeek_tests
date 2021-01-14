@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-09T08:46:33.017Z"
+        date="2021-01-13T14:01:48.514Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -16,18 +16,6 @@
    <app element="false"
         id="/Users/antonsavacenko/IdeaProjects/Adapter/Decorator/out/production/Decorator/ex3">
       <package element="false" id="ex3">
-         <class color="green" element="false" id="ShapeDecorator" value="NaN">
-            <vars>
-               <var id="k">1</var>
-               <var id="l">0</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="Circle" value="NaN">
-            <vars>
-               <var id="k">1</var>
-               <var id="l">0</var>
-            </vars>
-         </class>
          <class color="green" element="false" id="Rectangle" value="NaN">
             <vars>
                <var id="k">1</var>
@@ -38,6 +26,18 @@
                 element="false"
                 id="RedShapeDecorator"
                 value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="ShapeDecorator" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Circle" value="NaN">
             <vars>
                <var id="k">1</var>
                <var id="l">0</var>

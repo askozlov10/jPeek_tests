@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        date="2021-01-06T15:00:42.494Z"
+        date="2021-01-13T13:47:51.972Z"
         schema="xsd/skeleton.xsd"
         version="${project.version}"
         xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
@@ -16,6 +16,12 @@
    <app element="false"
         id="/Users/antonsavacenko/IdeaProjects/Adapter/1/out/production/1/org/ex3">
       <package element="false" id="org.ex3">
+         <class color="green" element="false" id="RoundPeg" value="NaN">
+            <vars>
+               <var id="k">1</var>
+               <var id="l">0</var>
+            </vars>
+         </class>
          <class color="green" element="false" id="SquarePegAdapter" value="NaN">
             <vars>
                <var id="k">1</var>
@@ -26,12 +32,6 @@
             <vars>
                <var id="k">2</var>
                <var id="l">1</var>
-            </vars>
-         </class>
-         <class color="green" element="false" id="RoundPeg" value="NaN">
-            <vars>
-               <var id="k">1</var>
-               <var id="l">0</var>
             </vars>
          </class>
          <class color="green" element="false" id="SquarePeg" value="NaN">

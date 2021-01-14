@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-09T06:54:55.789Z"
+<skeleton date="2021-01-13T13:56:24.204Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex3">
@@ -115,323 +115,6 @@
                      <op code="get">works</op>
                      <op code="call">
                         <name>java.util.List.clear</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="WorkLoader"><!--Package: ex3; name: ex3.WorkLoader; file: ex3.WorkLoader-->
-            <attributes>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Ljava/util/Properties">properties</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(Ljava/lang/String;)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Ljava/lang/String">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.util.Properties.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">properties</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/util/Properties;"
-                       name="getProperties"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/util/Properties</return>
-                  <ops>
-                     <op code="get">properties</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/util/List;"
-                       name="getWorkList"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/util/List</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.util.ArrayList.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="get">properties</op>
-                     <op code="call">
-                        <name>java.util.Properties.keySet</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.util.Set.iterator</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.util.Iterator.hasNext</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.util.Iterator.next</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.Object.toString</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.String.length</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.String.substring</name>
-                        <args>
-                           <arg type="I">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.String.toUpperCase</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="get">properties</op>
-                     <op code="call">
-                        <name>java.lang.Object.toString</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.util.Properties.getProperty</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>ex3.Calculator.valueOf</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.String.split</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.util.Arrays.asList</name>
-                        <args>
-                           <arg type="[Ljava/lang/Object">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>ex3.Work.&lt;init&gt;</name>
-                        <args>
-                           <arg type="Lex3/Calculator">?</arg>
-                           <arg type="Ljava/util/List">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.util.List.add</name>
-                        <args>
-                           <arg type="Ljava/lang/Object">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="Work"><!--Package: ex3; name: ex3.Work; file: ex3.Work-->
-            <attributes>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Lex3/Calculator">workType</attribute>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Ljava/util/List">work</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(Lex3/Calculator;Ljava/util/List;)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Lex3/Calculator">?</arg>
-                     <arg type="Ljava/util/List">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.util.ArrayList.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">work</op>
-                     <op code="put">workType</op>
-                     <op code="put">work</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Lex3/Calculator;"
-                       name="getWorkType"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Lex3/Calculator</return>
-                  <ops>
-                     <op code="get">workType</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="(Lex3/Calculator;)V"
-                       name="setWorkType"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Lex3/Calculator">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="put">workType</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/util/List;"
-                       name="getWork"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/util/List</return>
-                  <ops>
-                     <op code="get">work</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="(Ljava/util/List;)V"
-                       name="setWork"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Ljava/util/List">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="put">work</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/lang/String;"
-                       name="toString"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/lang/String</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="get">workType</op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/Object">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="get">work</op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/Object">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.toString</name>
                         <args>
                            <arg type="">?</arg>
                         </args>
@@ -623,6 +306,294 @@
                      </op>
                      <op code="call">
                         <name>ex3.Manager.performWork</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="Employee"><!--Package: ex3; name: ex3.Employee; file: ex3.Employee-->
+            <attributes>
+               <attribute final="false" public="false" static="false" type="J">employeeId</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">employeeName</attribute>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/lang/String">designation</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(JLjava/lang/String;Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="J">?</arg>
+                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">employeeId</op>
+                     <op code="put">employeeName</op>
+                     <op code="put">designation</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()J"
+                       name="getEmployeeId"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>J</return>
+                  <ops>
+                     <op code="get">employeeId</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(J)V"
+                       name="setEmployeeId"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="J">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">employeeId</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getEmployeeName"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">employeeName</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="setEmployeeName"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">employeeName</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="getDesignation"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">designation</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="(Ljava/lang/String;)V"
+                       name="setDesignation"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="put">designation</op>
+                  </ops>
+               </method>
+               <method abstract="true"
+                       bridge="false"
+                       ctor="false"
+                       desc="()I"
+                       name="teamSize"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>I</return>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="fullDetails"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">employeeId</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="J">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">employeeName</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">designation</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex3.Employee.teamSize</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.toString</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="shortDetails"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">employeeName</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.toString</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="toString"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="call">
+                        <name>ex3.Employee.shortDetails</name>
                         <args>
                            <arg type="">?</arg>
                         </args>
@@ -922,30 +893,28 @@
                </method>
             </methods>
          </class>
-         <class id="Employee"><!--Package: ex3; name: ex3.Employee; file: ex3.Employee-->
+         <class id="Work"><!--Package: ex3; name: ex3.Work; file: ex3.Work-->
             <attributes>
-               <attribute final="false" public="false" static="false" type="J">employeeId</attribute>
                <attribute final="false"
                           public="false"
                           static="false"
-                          type="Ljava/lang/String">employeeName</attribute>
+                          type="Lex3/Calculator">workType</attribute>
                <attribute final="false"
                           public="false"
                           static="false"
-                          type="Ljava/lang/String">designation</attribute>
+                          type="Ljava/util/List">work</attribute>
             </attributes>
             <methods>
                <method abstract="false"
                        bridge="false"
                        ctor="true"
-                       desc="(JLjava/lang/String;Ljava/lang/String;)V"
+                       desc="(Lex3/Calculator;Ljava/util/List;)V"
                        name="&lt;init&gt;"
                        static="false"
                        visibility="public">
                   <args>
-                     <arg type="J">?</arg>
-                     <arg type="Ljava/lang/String">?</arg>
-                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Lex3/Calculator">?</arg>
+                     <arg type="Ljava/util/List">?</arg>
                   </args>
                   <return>V</return>
                   <ops>
@@ -955,239 +924,71 @@
                            <arg type="">?</arg>
                         </args>
                      </op>
-                     <op code="put">employeeId</op>
-                     <op code="put">employeeName</op>
-                     <op code="put">designation</op>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">work</op>
+                     <op code="put">workType</op>
+                     <op code="put">work</op>
                   </ops>
                </method>
                <method abstract="false"
                        bridge="false"
                        ctor="false"
-                       desc="()J"
-                       name="getEmployeeId"
+                       desc="()Lex3/Calculator;"
+                       name="getWorkType"
                        static="false"
                        visibility="public">
                   <args/>
-                  <return>J</return>
+                  <return>Lex3/Calculator</return>
                   <ops>
-                     <op code="get">employeeId</op>
+                     <op code="get">workType</op>
                   </ops>
                </method>
                <method abstract="false"
                        bridge="false"
                        ctor="false"
-                       desc="(J)V"
-                       name="setEmployeeId"
+                       desc="(Lex3/Calculator;)V"
+                       name="setWorkType"
                        static="false"
                        visibility="public">
                   <args>
-                     <arg type="J">?</arg>
+                     <arg type="Lex3/Calculator">?</arg>
                   </args>
                   <return>V</return>
                   <ops>
-                     <op code="put">employeeId</op>
+                     <op code="put">workType</op>
                   </ops>
                </method>
                <method abstract="false"
                        bridge="false"
                        ctor="false"
-                       desc="()Ljava/lang/String;"
-                       name="getEmployeeName"
+                       desc="()Ljava/util/List;"
+                       name="getWork"
                        static="false"
                        visibility="public">
                   <args/>
-                  <return>Ljava/lang/String</return>
+                  <return>Ljava/util/List</return>
                   <ops>
-                     <op code="get">employeeName</op>
+                     <op code="get">work</op>
                   </ops>
                </method>
                <method abstract="false"
                        bridge="false"
                        ctor="false"
-                       desc="(Ljava/lang/String;)V"
-                       name="setEmployeeName"
+                       desc="(Ljava/util/List;)V"
+                       name="setWork"
                        static="false"
                        visibility="public">
                   <args>
-                     <arg type="Ljava/lang/String">?</arg>
+                     <arg type="Ljava/util/List">?</arg>
                   </args>
                   <return>V</return>
                   <ops>
-                     <op code="put">employeeName</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/lang/String;"
-                       name="getDesignation"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/lang/String</return>
-                  <ops>
-                     <op code="get">designation</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="(Ljava/lang/String;)V"
-                       name="setDesignation"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Ljava/lang/String">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="put">designation</op>
-                  </ops>
-               </method>
-               <method abstract="true"
-                       bridge="false"
-                       ctor="false"
-                       desc="()I"
-                       name="teamSize"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>I</return>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/lang/String;"
-                       name="fullDetails"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/lang/String</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="get">employeeId</op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="J">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="get">employeeName</op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="get">designation</op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>ex3.Employee.teamSize</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="I">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.toString</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/lang/String;"
-                       name="shortDetails"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/lang/String</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="get">employeeName</op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.append</name>
-                        <args>
-                           <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                     <op code="call">
-                        <name>java.lang.StringBuilder.toString</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
+                     <op code="put">work</op>
                   </ops>
                </method>
                <method abstract="false"
@@ -1201,9 +1002,208 @@
                   <return>Ljava/lang/String</return>
                   <ops>
                      <op code="call">
-                        <name>ex3.Employee.shortDetails</name>
+                        <name>java.lang.StringBuilder.&lt;init&gt;</name>
                         <args>
                            <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">workType</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">work</op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.append</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.StringBuilder.toString</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
+         <class id="WorkLoader"><!--Package: ex3; name: ex3.WorkLoader; file: ex3.WorkLoader-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Ljava/util/Properties">properties</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Ljava/lang/String;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Ljava/lang/String">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Properties.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">properties</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/util/Properties;"
+                       name="getProperties"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/util/Properties</return>
+                  <ops>
+                     <op code="get">properties</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/util/List;"
+                       name="getWorkList"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/util/List</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.util.ArrayList.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">properties</op>
+                     <op code="call">
+                        <name>java.util.Properties.keySet</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Set.iterator</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.hasNext</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Iterator.next</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.Object.toString</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.length</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.substring</name>
+                        <args>
+                           <arg type="I">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.toUpperCase</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="get">properties</op>
+                     <op code="call">
+                        <name>java.lang.Object.toString</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Properties.getProperty</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex3.Calculator.valueOf</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.lang.String.split</name>
+                        <args>
+                           <arg type="Ljava/lang/String">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.Arrays.asList</name>
+                        <args>
+                           <arg type="[Ljava/lang/Object">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>ex3.Work.&lt;init&gt;</name>
+                        <args>
+                           <arg type="Lex3/Calculator">?</arg>
+                           <arg type="Ljava/util/List">?</arg>
+                        </args>
+                     </op>
+                     <op code="call">
+                        <name>java.util.List.add</name>
+                        <args>
+                           <arg type="Ljava/lang/Object">?</arg>
                         </args>
                      </op>
                   </ops>

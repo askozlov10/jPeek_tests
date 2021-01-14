@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<skeleton date="2021-01-09T08:45:44.258Z"
+<skeleton date="2021-01-13T13:59:47.253Z"
           schema="xsd/skeleton.xsd"
           version="${project.version}">
    <app id="/Users/antonsavacenko/IdeaProjects/Adapter/Decorator/out/production/Decorator/ex2">
@@ -96,6 +96,56 @@
                </method>
             </methods>
          </class>
+         <class id="TreeDecorator"><!--Package: ex2; name: ex2.TreeDecorator; file: ex2.TreeDecorator-->
+            <attributes>
+               <attribute final="false"
+                          public="false"
+                          static="false"
+                          type="Lex2/ChristmasTree">tree</attribute>
+            </attributes>
+            <methods>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="true"
+                       desc="(Lex2/ChristmasTree;)V"
+                       name="&lt;init&gt;"
+                       static="false"
+                       visibility="public">
+                  <args>
+                     <arg type="Lex2/ChristmasTree">?</arg>
+                  </args>
+                  <return>V</return>
+                  <ops>
+                     <op code="call">
+                        <name>java.lang.Object.&lt;init&gt;</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                     <op code="put">tree</op>
+                  </ops>
+               </method>
+               <method abstract="false"
+                       bridge="false"
+                       ctor="false"
+                       desc="()Ljava/lang/String;"
+                       name="decorate"
+                       static="false"
+                       visibility="public">
+                  <args/>
+                  <return>Ljava/lang/String</return>
+                  <ops>
+                     <op code="get">tree</op>
+                     <op code="call">
+                        <name>ex2.ChristmasTree.decorate</name>
+                        <args>
+                           <arg type="">?</arg>
+                        </args>
+                     </op>
+                  </ops>
+               </method>
+            </methods>
+         </class>
          <class id="Main"><!--Package: ex2; name: ex2.Main; file: ex2.Main-->
             <attributes/>
             <methods>
@@ -171,56 +221,6 @@
                         <name>java.io.PrintStream.println</name>
                         <args>
                            <arg type="Ljava/lang/String">?</arg>
-                        </args>
-                     </op>
-                  </ops>
-               </method>
-            </methods>
-         </class>
-         <class id="TreeDecorator"><!--Package: ex2; name: ex2.TreeDecorator; file: ex2.TreeDecorator-->
-            <attributes>
-               <attribute final="false"
-                          public="false"
-                          static="false"
-                          type="Lex2/ChristmasTree">tree</attribute>
-            </attributes>
-            <methods>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="true"
-                       desc="(Lex2/ChristmasTree;)V"
-                       name="&lt;init&gt;"
-                       static="false"
-                       visibility="public">
-                  <args>
-                     <arg type="Lex2/ChristmasTree">?</arg>
-                  </args>
-                  <return>V</return>
-                  <ops>
-                     <op code="call">
-                        <name>java.lang.Object.&lt;init&gt;</name>
-                        <args>
-                           <arg type="">?</arg>
-                        </args>
-                     </op>
-                     <op code="put">tree</op>
-                  </ops>
-               </method>
-               <method abstract="false"
-                       bridge="false"
-                       ctor="false"
-                       desc="()Ljava/lang/String;"
-                       name="decorate"
-                       static="false"
-                       visibility="public">
-                  <args/>
-                  <return>Ljava/lang/String</return>
-                  <ops>
-                     <op code="get">tree</op>
-                     <op code="call">
-                        <name>ex2.ChristmasTree.decorate</name>
-                        <args>
-                           <arg type="">?</arg>
                         </args>
                      </op>
                   </ops>

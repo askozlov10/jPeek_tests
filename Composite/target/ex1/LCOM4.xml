@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-13T13:53:57.363Z"
+        schema="xsd/skeleton.xsd"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>LCOM4</title>
+   <description>'LCOM4' is a 1995 revision by Martin Hitz and Behzad Montazeri,
+          that further improves upon the revised versions LCOM3 proposed by
+          W. Li and S. Henry in "Maintenance Metrics for the Object Oriented Paradigm".
+          LCOM4 establishes connections between methods not just on shared attributes
+          of the class, but also on whether one method calls the other. That is,
+          methods A and B are said to be related if either both use at least one
+          instance variable in common, OR A calls B, OR B calls A.
+          LCOM4 tweaks the formula for method connections in order to eliminate
+          the distorting effects that 'getters' may have on earlier LCOM variants,
+          and also methods that purely rely on the reuse of other methods without
+          accessing attributes directly (think method overloads where the ones
+          with the least args reuse the ones with the most args).
+        </description>
+   <app element="false"
+        id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex1">
+      <package element="false" id="ex1">
+         <class color="red"
+                element="true"
+                id="ImageEditor$EditorCanvas"
+                value="0.9167">
+            <vars>
+               <var id="methods">5</var>
+               <var id="attributes">3</var>
+               <var id="pairs">4</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Dot" value="1.5">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">1</var>
+               <var id="pairs">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Circle" value="1">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">1</var>
+               <var id="pairs">1</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="Main" value="0">
+            <vars>
+               <var id="methods">0</var>
+               <var id="attributes">0</var>
+               <var id="pairs">0</var>
+            </vars>
+         </class>
+         <class color="green" element="true" id="ImageEditor" value="0">
+            <vars>
+               <var id="methods">1</var>
+               <var id="attributes">2</var>
+               <var id="pairs">0</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="BaseShape" value="0.9773">
+            <vars>
+               <var id="methods">12</var>
+               <var id="attributes">4</var>
+               <var id="pairs">5</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Rectangle" value="1.5">
+            <vars>
+               <var id="methods">3</var>
+               <var id="attributes">2</var>
+               <var id="pairs">0</var>
+            </vars>
+         </class>
+         <class color="green"
+                element="false"
+                id="CompoundShape"
+                value="-4.9231">
+            <vars>
+               <var id="methods">14</var>
+               <var id="attributes">1</var>
+               <var id="pairs">78</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.4" low="0.6">[0.6000 .. 0.4000]</colors>
+   <min>0</min>
+   <max>1</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 8, steps: 32; all: 5; min: 0; max: 1; delta: 0.03125-->
+      <bar color="green" x="0">2</bar>
+      <!--step: 0, left: 0, right: 0.03125-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 0.03125, right: 0.0625-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 0.0625, right: 0.09375-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 0.09375, right: 0.125-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0.125, right: 0.15625-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 0.15625, right: 0.1875-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0.1875, right: 0.21875-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 0.21875, right: 0.25-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0.25, right: 0.28125-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 0.28125, right: 0.3125-->
+      <bar color="yellow" x="0.3125">0</bar>
+      <!--step: 10, left: 0.3125, right: 0.34375-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0.34375, right: 0.375-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0.375, right: 0.40625-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 0.40625, right: 0.4375-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.4375, right: 0.46875-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 0.46875, right: 0.5-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.5, right: 0.53125-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 0.53125, right: 0.5625-->
+      <bar color="yellow" x="0.5625">0</bar>
+      <!--step: 18, left: 0.5625, right: 0.59375-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.59375, right: 0.625-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0.625, right: 0.65625-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.65625, right: 0.6875-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0.6875, right: 0.71875-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0.71875, right: 0.75-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.75, right: 0.78125-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0.78125, right: 0.8125-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.8125, right: 0.84375-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.84375, right: 0.875-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.875, right: 0.90625-->
+      <bar color="red" x="0.90625">1</bar>
+      <!--step: 29, left: 0.90625, right: 0.9375-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0.9375, right: 0.96875-->
+      <bar color="red" x="0.96875">2</bar>
+      <!--step: 31, left: 0.96875, right: 1-->
+   </bars>
+   <statistics>
+      <total>8</total>
+      <elements>5</elements>
+      <mean>0.5788</mean>
+      <sigma>0.4733723650573616</sigma>
+      <variance>0.22408139600000002</variance>
+      <defects>0.4</defects>
+   </statistics>
+</metric>

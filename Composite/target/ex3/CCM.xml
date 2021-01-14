@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        date="2021-01-13T13:56:24.204Z"
+        schema="xsd/skeleton.xsd"
+        version="${project.version}"
+        xsi:noNamespaceSchemaLocation="xsd/metric.xsd">
+   <title>CCM</title>
+   <description>Class Connection Metric (CCM) is based on the connection
+          graph of a class where each node is a method and there exists an
+          "edge" or connection between nodes if either both nodes access the
+          same attribute of a class, or if both call the same method of the
+          class. The formula is defined as CCM = NC/(NMP x NCC), where
+          NC = number of connections according to the previous criteria,
+          NMP = maximum number of possible connections (NMP = (N x (N - 1))/2),
+          and NCC = number of connected components.</description>
+   <app element="false"
+        id="/Users/antonsavacenko/IdeaProjects/Adapter/Compositor/out/production/Composite/ex3">
+      <package element="false" id="ex3">
+         <class color="red" element="true" id="Engineer" value="0.1667">
+            <vars>
+               <var id="methods">3</var>
+               <var id="nc">1</var>
+               <var id="ncc">2</var>
+               <var id="nmp">3</var>
+            </vars>
+         </class>
+         <class color="green" element="false" id="Main" value="NaN">
+            <vars>
+               <var id="methods">0</var>
+               <var id="nc">0</var>
+               <var id="ncc">0</var>
+               <var id="nmp">0</var>
+            </vars>
+         </class>
+         <class color="red" element="false" id="Employee" value="0.0346">
+            <vars>
+               <var id="methods">10</var>
+               <var id="nc">14</var>
+               <var id="ncc">9</var>
+               <var id="nmp">45</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Manager" value="0.2">
+            <vars>
+               <var id="methods">5</var>
+               <var id="nc">10</var>
+               <var id="ncc">5</var>
+               <var id="nmp">10</var>
+            </vars>
+         </class>
+         <class color="red" element="true" id="Work" value="0.12">
+            <vars>
+               <var id="methods">5</var>
+               <var id="nc">6</var>
+               <var id="ncc">5</var>
+               <var id="nmp">10</var>
+            </vars>
+         </class>
+         <class color="yellow" element="false" id="WorkLoader" value="0.5">
+            <vars>
+               <var id="methods">2</var>
+               <var id="nc">1</var>
+               <var id="ncc">2</var>
+               <var id="nmp">1</var>
+            </vars>
+         </class>
+      </package>
+   </app>
+   <colors high="0.6" low="0.4">[0.4000 .. 0.6000]</colors>
+   <min>0.12</min>
+   <max>0.2</max>
+   <bars xmlns:xs="http://www.w3.org/2001/XMLSchema"><!--count: 6, steps: 32; all: 3; min: 0.12; max: 0.2; delta: 0.0025000002-->
+      <bar color="red" x="0">1</bar>
+      <!--step: 0, left: 0.12, right: 0.122499995-->
+      <bar color="yellow" x="0.03125">0</bar>
+      <!--step: 1, left: 0.122499995, right: 0.125-->
+      <bar color="yellow" x="0.0625">0</bar>
+      <!--step: 2, left: 0.125, right: 0.1275-->
+      <bar color="yellow" x="0.09375">0</bar>
+      <!--step: 3, left: 0.1275, right: 0.13-->
+      <bar color="yellow" x="0.125">0</bar>
+      <!--step: 4, left: 0.13, right: 0.1325-->
+      <bar color="yellow" x="0.15625">0</bar>
+      <!--step: 5, left: 0.1325, right: 0.13499999-->
+      <bar color="yellow" x="0.1875">0</bar>
+      <!--step: 6, left: 0.13499999, right: 0.1375-->
+      <bar color="yellow" x="0.21875">0</bar>
+      <!--step: 7, left: 0.1375, right: 0.14-->
+      <bar color="yellow" x="0.25">0</bar>
+      <!--step: 8, left: 0.14, right: 0.1425-->
+      <bar color="yellow" x="0.28125">0</bar>
+      <!--step: 9, left: 0.1425, right: 0.145-->
+      <bar color="yellow" x="0.3125">0</bar>
+      <!--step: 10, left: 0.145, right: 0.1475-->
+      <bar color="yellow" x="0.34375">0</bar>
+      <!--step: 11, left: 0.1475, right: 0.15-->
+      <bar color="yellow" x="0.375">0</bar>
+      <!--step: 12, left: 0.15, right: 0.1525-->
+      <bar color="yellow" x="0.40625">0</bar>
+      <!--step: 13, left: 0.1525, right: 0.155-->
+      <bar color="yellow" x="0.4375">0</bar>
+      <!--step: 14, left: 0.155, right: 0.1575-->
+      <bar color="yellow" x="0.46875">0</bar>
+      <!--step: 15, left: 0.1575, right: 0.16-->
+      <bar color="yellow" x="0.5">0</bar>
+      <!--step: 16, left: 0.16, right: 0.1625-->
+      <bar color="yellow" x="0.53125">0</bar>
+      <!--step: 17, left: 0.1625, right: 0.16499999-->
+      <bar color="red" x="0.5625">1</bar>
+      <!--step: 18, left: 0.16499999, right: 0.1675-->
+      <bar color="yellow" x="0.59375">0</bar>
+      <!--step: 19, left: 0.1675, right: 0.17-->
+      <bar color="yellow" x="0.625">0</bar>
+      <!--step: 20, left: 0.17, right: 0.1725-->
+      <bar color="yellow" x="0.65625">0</bar>
+      <!--step: 21, left: 0.1725, right: 0.175-->
+      <bar color="yellow" x="0.6875">0</bar>
+      <!--step: 22, left: 0.175, right: 0.17750001-->
+      <bar color="yellow" x="0.71875">0</bar>
+      <!--step: 23, left: 0.17750001, right: 0.18-->
+      <bar color="yellow" x="0.75">0</bar>
+      <!--step: 24, left: 0.18, right: 0.1825-->
+      <bar color="yellow" x="0.78125">0</bar>
+      <!--step: 25, left: 0.1825, right: 0.185-->
+      <bar color="yellow" x="0.8125">0</bar>
+      <!--step: 26, left: 0.185, right: 0.1875-->
+      <bar color="yellow" x="0.84375">0</bar>
+      <!--step: 27, left: 0.1875, right: 0.19-->
+      <bar color="yellow" x="0.875">0</bar>
+      <!--step: 28, left: 0.19, right: 0.1925-->
+      <bar color="yellow" x="0.90625">0</bar>
+      <!--step: 29, left: 0.1925, right: 0.195-->
+      <bar color="yellow" x="0.9375">0</bar>
+      <!--step: 30, left: 0.195, right: 0.1975-->
+      <bar color="red" x="0.96875">1</bar>
+      <!--step: 31, left: 0.1975, right: 0.2-->
+   </bars>
+   <statistics>
+      <total>6</total>
+      <elements>3</elements>
+      <mean>0.16223333333333334</mean>
+      <sigma>0.032812226718438704</sigma>
+      <variance>0.0010766422222222227</variance>
+      <defects>0.6666666666666666</defects>
+   </statistics>
+</metric>
